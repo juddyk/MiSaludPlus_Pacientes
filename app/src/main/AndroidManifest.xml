@@ -2,14 +2,70 @@
 
     package="com.appdemo.mi_salud.misaludplus_pacientes">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_otras.splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI_otras.logueo"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_otras.registroPaciente"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_otras.urgencias"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_otras.laboratorios"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_otras.terapias"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_otras.otros"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_medicos.medicos"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_medicamentos.medicamentos"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UI_medicos.DoctorListActivity"
+            android:label="@string/title_doctor_list"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".UI_medicos.DoctorDetailActivity"
+            android:label="@string/title_doctor_detail"
+            android:parentActivityName=".UI_medicos.DoctorListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appdemo.mi_salud.misaludplus_pacientes.UI_medicos.DoctorListActivity"/>
+        </activity>
+        <activity android:name=".UI_otras.perfilUsuario">
+        </activity>
+        <activity android:name=".UI_otras.odontologia">
+        </activity>
     </application>
 
 </manifest>

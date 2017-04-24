@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:text="@string/pst_msj1"
+            style="@style/txtSub4"
+            android:gravity="center"
+            android:layout_marginTop="10sp"
+            android:drawablePadding="10sp"
+            android:drawableStart="@drawable/seguridad"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            >
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:text="@string/pst_frec"
+                android:layout_weight="1"
+                style="@style/txtSub"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            >
+
+            <EditText
+                android:labelFor="@+id/csaveFrec1"
+                android:id="@+id/csaveFrec1"
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:background="@drawable/round_txt2"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="5sp"
+                style="@style/txtBoxNum"
+                android:layout_weight="1"
+                android:maxLength="3"
+                />
+
+            <TextView
+                android:layout_width="40sp"
+                android:layout_height="30sp"
+                android:text="@string/pst_frec1"
+                android:layout_weight="1"
+                />
+
+            <Spinner
+                android:id="@+id/csaveFrec2"
+                android:layout_width="90sp"
+                android:layout_height="30sp"
+                android:entries="@array/frecuencia"
+                android:layout_weight="2"
+                style="@style/spinBox">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            >
+
+            <CheckBox
+                android:id="@+id/csaveChckF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pst_fmed"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:layout_marginRight="10sp"
+                style="@style/txtSub"/>
+
+            <CheckBox
+                android:id="@+id/csaveChckA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pst_amed"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:layout_marginRight="10sp"
+                style="@style/txtSub"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25sp"
+                android:layout_marginTop="10sp"
+                android:text="@string/pst_viaa"
+                style="@style/txtSub"/>
+
+            <Spinner
+                android:id="@+id/csaveViAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:entries="@array/viadmin_med"
+                style="@style/spinBox">
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100sp"
+                android:text="@string/pst_contraindicaciones"
+                style="@style/txtSub4"
+                android:gravity="center"
+                android:layout_marginTop="10sp"
+                android:drawablePadding="10sp"
+                android:drawableStart="@drawable/warning"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/csaveAdv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                style="@style/txtBoxS"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:gravity="center"
+                android:text="@string/pst_usos"
+                style="@style/txtSub"/>
+
+            <TextView
+                android:id="@+id/csaveUso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                style="@style/txtBoxS"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pst_mensaje0"
+                style="@style/txtSub"
+                android:gravity="center"
+                />
+
+            <CheckBox
+                android:id="@+id/csaveAceptar"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:text="@string/pst_mensaje1"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:layout_marginRight="10sp"
+                style="@style/txtSub0"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

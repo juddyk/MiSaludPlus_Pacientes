@@ -1,0 +1,147 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.appdemo.mi_salud.misaludplus_pacientes.UI_otras.noticias">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ubicación Farmacias"
+                android:textStyle="bold|italic"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mapas"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub1"
+                android:text="@string/general_pago"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:src="@drawable/pago_exito"
+                    android:scaleType="fitCenter"
+                    android:padding="5sp"
+                    android:contentDescription="@string/general_pago"
+                    android:background="@drawable/img_btn"
+                    style="@style/imgs0"
+                    />
+
+                <ImageButton
+                    android:src="@drawable/pago_pse"
+                    android:scaleType="fitCenter"
+                    android:padding="5sp"
+                    android:contentDescription="@string/general_pago"
+                    android:background="@drawable/img_btn"
+                    style="@style/imgs0"
+                    />
+
+                <ImageButton
+                    android:src="@drawable/pago_paypal"
+                    android:scaleType="fitCenter"
+                    android:padding="0sp"
+                    android:contentDescription="@string/general_pago"
+                    android:background="@drawable/img_btn1"
+                    style="@style/imgsl"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <ImageButton
+                    android:src="@drawable/pago_gana"
+                    android:scaleType="fitCenter"
+                    android:padding="5sp"
+                    android:contentDescription="@string/general_pago"
+                    android:background="@drawable/img_btn"
+                    style="@style/imgs0"
+                    />
+
+                <ImageButton
+                    android:src="@drawable/pago_baloto"
+                    android:scaleType="fitCenter"
+                    android:padding="5sp"
+                    android:background="@drawable/img_btn"
+                    style="@style/imgs0"
+                    android:contentDescription="@string/general_pago"
+                    />
+
+                <ImageButton
+                    android:src="@drawable/pago_carulla"
+                    android:scaleType="fitCenter"
+                    android:padding="0sp"
+                    android:background="@drawable/img_btn1"
+                    style="@style/imgsl"
+                    android:contentDescription="@string/general_pago"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+
+                <ImageButton
+                    android:src="@drawable/pago_surtimax"
+                    android:scaleType="fitCenter"
+                    android:padding="5sp"
+                    android:background="@drawable/img_btn"
+                    style="@style/imgs0"
+                    android:contentDescription="@string/general_pago"
+                    />
+
+                <ImageButton
+                    android:src="@drawable/pago_efecty"
+                    android:scaleType="fitCenter"
+                    android:padding="0sp"
+                    android:background="@drawable/img_btn1"
+                    style="@style/imgsl"
+                    android:contentDescription="@string/general_pago"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

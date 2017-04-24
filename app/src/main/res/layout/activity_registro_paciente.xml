@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registro_paciente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.appdemo.mi_salud.misaludplus_pacientes.UI_otras.registroPaciente">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10sp"
+        >
+        <ImageView
+            android:layout_width="70sp"
+            android:layout_height="80sp"
+            android:background="@drawable/perfil"
+            android:layout_gravity="center"
+            android:contentDescription="perfil"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            style="@style/txtSub4"
+            android:text="@string/reg_mensaje"/>
+
+        <!--1 BANCO DEL NOMBRE-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:text="@string/reg_nombre"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/regName"
+                    android:layout_width="0sp"
+                    android:layout_height="30sp"
+                    android:background="@drawable/round_txt2"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="5sp"
+                    style="@style/txtBox3"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btnName"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/editar"
+                    android:scaleType="fitCenter"
+                    android:padding="5sp"
+                    android:background="@drawable/img_btn"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginEnd="15sp"
+                    android:contentDescription="editar"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--2 BANCO DE FECHA NACIMIENTO-->
+        <LinearLayout
+            android:id="@+id/vistaFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:layout_marginTop="10sp"
+                android:text="@string/reg_fechanacimiento"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/regFech"
+                    android:layout_width="160sp"
+                    android:layout_height="30sp"
+                    style="@style/txtBox3"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/round_txt2"
+                    android:text="DD / MM / AAAA"
+                    android:gravity="center"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btnFech"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/calendar"
+                    android:scaleType="fitCenter"
+                    android:padding="5sp"
+                    android:background="@drawable/img_btn"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:contentDescription="@string/calendario"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--3 BANCO DEL DOCUMENTO DE IDENTIDAD-->
+        <LinearLayout
+            android:id="@+id/vistaDocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:text="@string/reg_documento"
+                android:layout_marginTop="10sp"
+                android:id="@+id/textView4"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_tipdocumento"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_numdocumneto"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regTipoD"
+                    android:layout_width="85sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/tipdoc"
+                    style="@style/spinBox"
+                    />
+
+                <EditText
+                    android:id="@+id/regDoc"
+                    android:labelFor="@+id/regDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/round_txt2"
+                    style="@style/txtBoxNum"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--4 BANCOS DE GENERO y ESTADO CIVIL-->
+        <LinearLayout
+            android:id="@+id/vistaGnEC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_genero"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_estadocvl"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regSex"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="30sp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="1"
+                    android:entries="@array/genero"
+                    style="@style/spinBox"
+                    />
+
+                <Spinner
+                    android:id="@+id/regEst"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="30sp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="1"
+                    android:entries="@array/estado"
+                    style="@style/spinBox"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--5 BANCOS DE LUGAR DE RESIDENCIA-->
+        <LinearLayout
+            android:id="@+id/vistaResidencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:layout_weight="1"
+                android:text="@string/reg_residencia"
+                android:layout_marginTop="20sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_departamento"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_municipio"
+                    android:id="@+id/textView"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regDepr"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="30sp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="1"
+                    android:entries="@array/departamentos"
+                    style="@style/spinBox"
+                    />
+
+                <Spinner
+                    android:id="@+id/regMunc"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="30sp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="1"
+                    android:entries="@array/mun1"
+                    style="@style/spinBox"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10sp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:text="@string/reg_direccion"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/regDir"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round_txt2"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginEnd="5sp"
+                        style="@style/txtBox3"
+                        android:inputType="textMultiLine"
+                        android:maxLines="5"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnDir"
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:src="@drawable/editar"
+                        android:scaleType="fitCenter"
+                        android:padding="5sp"
+                        android:background="@drawable/img_btn"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginEnd="15sp"
+                        android:contentDescription="@string/reg_direccion"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:layout_weight="1"
+                android:text="@string/reg_estrato"
+                />
+            <Spinner
+                android:id="@+id/regEstr"
+                android:layout_height="30sp"
+                android:layout_width="70sp"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/estrato"
+                style="@style/spinBox"
+                />
+        </LinearLayout>
+
+        <!--6 BANCO DE OCUPACIÓN -->
+        <LinearLayout
+            android:id="@+id/vistaOcupacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10sp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:text="@string/reg_ocupacion"
+                android:layout_marginTop="10sp"
+                />
+            <Spinner
+                android:id="@+id/regOcup"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_height="30sp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/ocupacion"
+                style="@style/spinBox"
+                />
+            <EditText
+                android:id="@+id/regEtOcup"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_txt2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:visibility="gone"
+                style="@style/txtBox"
+                android:inputType="textMultiLine"
+                android:hint="@string/reg_ocupacion2"
+                android:maxLines="3"
+                />
+
+        </LinearLayout>
+
+        <!--7 BANCOS DE TELEFONOS-->
+        <LinearLayout
+            android:id="@+id/vistaTelefonos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:layout_marginTop="12sp"
+                android:text="@string/reg_telefono"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:layout_weight="1"
+                android:text="@string/reg_celular"
+                />
+
+            <EditText
+                android:id="@+id/regCel"
+                android:labelFor="@+id/regCel"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:background="@drawable/round_txt2"
+                style="@style/txtBoxNum"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_fijo1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_fijo2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:labelFor="@+id/regFijo1"
+                    android:id="@+id/regFijo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/round_txt2"
+                    style="@style/txtBoxNum"
+                    android:layout_weight="1"
+                    />
+
+                <EditText
+                    android:id="@+id/regFijo2"
+                    android:labelFor="@+id/regFijo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:background="@drawable/round_txt2"
+                    style="@style/txtBoxNum"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--8 BANCOS DE EPS , ARL , Regimen y Grupo Etnico-->
+        <LinearLayout
+            android:id="@+id/vistaVarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15sp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_eps"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="1"
+                    android:text="@string/reg_arl"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/regEPS"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="30sp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="1"
+                    android:entries="@array/EPSlist"
+                    style="@style/spinBox"
+                    />
+
+                <Spinner
+                    android:id="@+id/regARL"
+                    android:layout_width="35sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="30sp"
+                    android:drawSelectorOnTop="true"
+                    android:layout_weight="1"
+                    android:entries="@array/ARLlist"
+                    style="@style/spinBox"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15sp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:text="@string/reg_regimen"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txtSub"
+                    android:layout_weight="0.5"
+                    android:text="@string/reg_grupoe"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Spinner
+                    android:id="@+id/regReg"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_height="30sp"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/regimen"
+                    style="@style/spinBox"
+                    android:layout_weight="1"
+                    />
+                <Spinner
+                    android:id="@+id/regGrE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/grupoe"
+                    style="@style/spinBox"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--9 BANCOS DE CORREO-->
+        <LinearLayout
+            android:id="@+id/vistaCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10sp"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:text="@string/reg_correo1"
+                android:layout_marginTop="10sp"
+                />
+
+            <EditText
+                android:id="@+id/regEmail1"
+                android:labelFor="@+id/regEmail1"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="@drawable/round_txt2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                style="@style/txtBoxEmail"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:text="@string/reg_correo2"
+                android:layout_marginTop="10sp"
+                />
+
+            <EditText
+                android:id="@+id/regEmail2"
+                android:labelFor="@+id/regEmail2"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:background="@drawable/round_txt2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                style="@style/txtBoxEmail"
+                />
+        </LinearLayout>
+
+        <!--10 BANCO DE DISCAPACIDADES -->
+        <LinearLayout
+            android:id="@+id/vistaDiscapacidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10sp"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/txtSub"
+                android:text="@string/reg_discapacidad"
+                android:layout_marginTop="10sp"
+                />
+
+            <Spinner
+                android:id="@+id/regDisc"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_height="30sp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/discapacidades"
+                style="@style/spinBox"
+                />
+            <EditText
+                android:id="@+id/regEtDisc"
+                android:labelFor="@+id/regEtDisc"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_txt2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:visibility="gone"
+                style="@style/txtBox"
+                android:inputType="textMultiLine"
+                android:hint="@string/reg_discapacidad2"
+                android:maxLines="3"
+                />
+        </LinearLayout>
+
+        <Button
+             android:id="@+id/regSend"
+             android:layout_width="150sp"
+             android:layout_height="wrap_content"
+             android:text="@string/registrar"
+             android:layout_marginTop="20sp"
+             android:background="@drawable/round_btn"
+             style="@style/btnBox"
+             android:visibility="gone"
+         />
+    </LinearLayout>
+
+</ScrollView>

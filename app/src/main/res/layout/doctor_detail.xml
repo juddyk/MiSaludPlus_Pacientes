@@ -1,0 +1,178 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.appdemo.mi_salud.misaludplus_pacientes.UI_medicos.DoctorDetailActivity"
+    android:id="@+id/persona_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <!--DATOS LIST-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        >
+        <!-- BANCO CON FOTO, PUNTAJE, SLOGAN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/doctor_phto"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/descriptor_photo"
+                android:layout_weight="1"
+                android:padding="1sp"
+                android:scaleType="fitCenter"
+                />
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                >
+                <ImageView
+                    android:id="@+id/doctor_pnt"
+                    android:layout_marginEnd="70sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:contentDescription="@string/descriptor_puntaje"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/doctor_visitas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0sp"
+                    android:textColor="@color/winter5"
+                    android:textSize="12sp"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:layout_weight="0.5"
+                    />
+
+                <TextView
+                    android:id="@+id/doctor_slogan"
+                    style="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:isScrollContainer="true"
+                    android:textColor="@color/winter4"
+                    android:maxLength="140"
+                    android:scrollHorizontally="false"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- BANCO UNIVERSIDADES-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/txtSub"
+            android:text="@string/med_pregrado"
+            android:gravity="start"
+            />
+        <TextView
+            android:id="@+id/doctor_pre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/txtBox5"
+            android:background="@drawable/round_txt4"
+            />
+        <TextView
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/txtSub"
+            android:text="@string/med_posgrado"/>
+        <TextView
+            android:id="@+id/doctor_pos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/txtBox5"
+            android:background="@drawable/round_txt4"
+            />
+
+        <!-- BANCO DE VISUALIZACIÓN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/doctor_prev"
+                android:layout_height="25sp"
+                android:layout_width="25sp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/img_btn"
+                android:layout_gravity="start"
+                android:contentDescription="@string/descriptor_prev"
+                android:src="@drawable/prev"
+                android:layout_marginEnd="75sp"
+                />
+            <ImageButton
+                android:id="@+id/doctor_next"
+                android:layout_height="25sp"
+                android:layout_width="25sp"
+                android:layout_marginStart="75sp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="end"
+                android:background="@drawable/img_btn"
+                android:contentDescription="@string/descriptor_next"
+                android:src="@drawable/next"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/doctor_textImg"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:textColor="@color/winter5"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/doctor_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:scaleType="fitCenter"
+            />
+
+        <!-- BANCO SERVICIOS-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/txtSub"
+            android:text="@string/med_servicios"
+            />
+
+        <TextView
+            android:id="@+id/doctor_serv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/txtBox5"
+            android:background="@drawable/round_txt4"
+            />
+
+    </LinearLayout>
+</ScrollView>

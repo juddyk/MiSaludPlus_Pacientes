@@ -1,3 +1,2381 @@
 <resources>
-    <string name="app_name">MiSaludPlus_Pacientes</string>
+    <string name="app_name">Mi Salud Plus</string>
+    <string name="digitos0">0,1,2,3,4,5,6,7,8,9</string>
+    <string name="digitos1">qwertyuiopasdfghjklñzxcvbnm, ,.</string>
+    <string name="digitos2">0,1,2,3,4,5,6,7,8,9,-, ,qwertyuiopasdfghjklñzxcvbnm,,,.,QWERTYUIOPASDFGHJKLÑZXCVBNM</string>
+    <!-- STRINGS LOGUEO-->
+    <string name="logueo_usr">Usuario</string>
+    <string name="logueo_pss">Contraseña</string>
+    <string name="logueo_reg">Registrarse</string>
+    <string name="logueo_in">Ingresar</string>
+    <string name="logueo_pac">Paciente</string>
+    <string name="tittle_reg">Registro</string>
+    <string name="tittle_lab">Mis Laboratorios</string>
+    <string name="tittle_urg">Mis Urgencias</string>
+    <string name="tittle_ter">Mis Terapias</string>
+    <string name="tittle_oth">Servicios Especiales</string>
+    <string name="tittle_odn">Odontologos</string>
+    <string name="tittle_med">Mis Médicos</string>
+    <string name="tittle_pas">Mis Medicamentos</string>
+    <string name="subtitt_lab">Laboratorios</string>
+    <string name="subtitt_urg">Urgencias</string>
+    <string name="subtitt_ter">Terapias</string>
+    <string name="subtitt_odn">Odontología</string>
+    <string name="subtitt_med">Médicos</string>
+    <string name="subtitt_pas">Medicamentos</string>
+    <string name="next">Continuar</string>
+    <string name="general_pago">Medios de Pago</string>
+    <string name="log_usr">Documento de Identidad</string>
+    <string name="log_psww">Contraseña</string>
+    <string name="log_wrong">Campos de inicio de sesión incompletos</string>
+    <string name="log_uwrong">Usuario No Existe</string>
+    <string name="log_pwrong">Contraseña Incorrecta</string>
+    <string name="log_fb">Espere un momento por favor</string>
+    <string name="data_empty">Faltan Datos</string>
+
+    <!-- CALENDARIO -->
+    <string name="calendario">Fecha de Nacimiento</string>
+    <string name="cal_day">Día</string>
+    <string name="cal_month">Mes</string>
+    <string name="cal_year">Año</string>
+
+    <!-- NOTICIAS-->
+    <string-array name="nwsLst">
+        <item>PROMOCIÓN DEL DÍA: Al consumir el servicio de 2 consultas especializadas, tienes GRATIS una consulta médica general virtual para usted o alguno de sus familiares registrados antes de la fecha de usted tomar el primer servicio </item>
+        <item>NOTICIA 2: </item>
+        <item>NOTICIA 3: </item>
+        <item>NOTICIA 4: </item>
+        <item>NOTICIA 5: </item>
+    </string-array>
+
+
+    <!-- STRINGS REGISTRO PACIENTE-->
+    <string name="reg_mensaje">Los datos marcados con (*) son obligatorios</string>
+    <string name="reg_nombre">Nombre Completo*</string>
+    <string name="reg_fechanacimiento">Fecha Nacimiento*</string>
+    <string name="reg_genero">Genero*</string>
+    <string name="reg_documento">Documento*</string>
+    <string name="reg_tipdocumento">Tipo</string>
+    <string name="reg_numdocumneto">Numero</string>
+    <string name="reg_expdocumento">Fecha de Expedicion*</string>
+    <string name="reg_residencia">Residencia*</string>
+    <string name="reg_departamento">Departamento</string>
+    <string name="reg_municipio">Municipio</string>
+    <string name="reg_direccion">Dirección*</string>
+    <string name="reg_grupoe">Grupo Etnico</string>
+    <string name="reg_estadocvl">Estado civil*</string>
+    <string name="reg_eps">EPS*</string>
+    <string name="reg_arl">ARL*</string>
+    <string name="reg_ocupacion">Ocupación*</string>
+    <string name="reg_ocupacion2">¿Cual?</string>
+    <string name="reg_estrato">Estrato*</string>
+    <string name="reg_correo1">Correo electrónico*</string>
+    <string name="reg_correo2">Otro correo electrónico</string>
+    <string name="reg_telefono">Telefonos</string>
+    <string name="reg_celular">Celular*</string>
+    <string name="reg_fijo1">Fijo*</string>
+    <string name="reg_fijo2">Otro Fijo</string>
+    <string name="reg_discapacidad">Discapacidad*</string>
+    <string name="reg_discapacidad2">¿Cual?</string>
+    <string name="reg_regimen">Regimen Especial</string>
+    <string name="reg_wrongDoc">El Número de Documento ya se encuentra registrado</string>
+    <string name="registrar">Enviar</string>
+    <string name="apellido1">Primer Apellido</string>
+    <string name="apellido2">Segundo Apellido</string>
+    <string name="nombre1">Primer Nombre</string>
+    <string name="nombre2">Segundo Nombre</string>
+    <string name="dirMensaje0">Ej: CALLE 7A SUR # 42B OESTE 70 </string>
+    <string name="dirMensaje1">Complemento: </string>
+    <string name="dirMensaje2">Ej: Edificio Palmas, Apartamento 501</string>
+    <string name="dirMensaje3">Para agregar un nombre propio (Ej: Poblado, Floresta, Los Molinos)</string>
+
+    <!--    MIS MEDICOS-->
+
+    <string name="med_especialistas">Especialistas</string>
+    <string name="med_medgeneral">Medico General</string>
+    <string name="med_enfermeria">Enfermero (a)</string>
+    <string name="med_otrospro">Otros Profesionales</string>
+    <string name="med_opciones">Opciones Medicas</string>
+    <string name="med_modalidad">Modalidad Atención</string>
+    <string name="med_tipoatencion">Tipo de Atención</string>
+    <string name="med_visitas">Visitas:</string>
+    <string name="med_pregrado">Pregado: </string>
+    <string name="med_posgrado">Posgrado: </string>
+    <string name="med_servicios">Servicios: </string>
+    <string name="med_acta">Acta de Grado: </string>
+    <string name="med_diploma">Diploma: </string>
+    <string name="med_agendar">*Los colores en gris no están disponibles </string>
+    <string name="med_NotSelec">No ha seleccionó una fecha </string>
+    <string name="med_Selec">Ha seleccionado la fecha: </string>
+
+    <!--    MIS MEDICAMENTOS-->
+    <string name="pst_nombre">Nombre Medicamento</string>
+    <string name="pst_msj1">Cuestionario de seguridad</string>
+    <string name="pst_edad">Edad</string>
+    <string name="pst_amed">Auto-medicación</string>
+    <string name="pst_fmed">Formula Medica</string>
+    <string name="pst_frec">Frecuencua de Toma</string>
+    <string name="pst_frec1">Cada</string>
+    <string name="pst_ci">Contraindicaciones</string>
+    <string name="pst_ok">Acepto</string>
+    <string name="pst_nok">Cancel</string>
+    <string name="pst_viaa">Vía de Administración</string>
+    <string name="pst_advertencias">Advertencias</string>
+    <string name="pst_usos">Modo de Uso</string>
+    <string name="pst_contraindicaciones">Advertencias/Contraindicaciones</string>
+    <string name="pst_mensaje0">Recuerde que el uso de este medicamento es bajo su responsabilidad</string>
+    <string name="pst_mensaje1">Estoy de acuerdo que leí y entendí la información dada del medicamento.</string>
+    <string name="pst_toast">Para continuar debe estar de acuerdo de que leyó y entendió la informacion presentada.</string>
+
+    <!--    DESCRIPTOR DE CONTENIDO DE LAS IMAGENES-->
+    <string name="descriptor_photo">PHOTO</string>
+    <string name="descriptor_puntaje">PUNTAJE</string>
+    <string name="descriptor_prev">PREVIO</string>
+    <string name="descriptor_next">SIGUIENTE</string>
+
+    <!-- ARRAYS MIS MEDICAMENTOS-->
+    <string-array name="frecuencia">
+        <item>--</item>
+        <item>Hora</item>
+        <item>Horas</item>
+        <item>Día</item>
+        <item>Días</item>
+        <item>Semana</item>
+        <item>Mes</item>
+    </string-array>
+
+
+    <!-- ARRAYS MIS MEDICOS-->
+
+    <string-array name="especialistas">
+        <item>--</item>
+        <item>Alergologia</item>
+        <item>Dolor y Cuidados Paliativos</item>
+        <item>Medicina Del Trabajo</item>
+        <item>Ortopedia y Traumatologia</item>
+        <item>Anestesiologia</item>
+        <item>Endocrinologia</item>
+        <item>Medicina Familiar</item>
+        <item>Ortopedia y Traumatologia Pediatrica</item>
+        <item>Anestesiologia Cardiovascular</item>
+        <item>Endocrinologia Pediatrica</item>
+        <item>Medicina Fisica y Rehabilitacion</item>
+        <item>Otorrinolaringologia</item>
+        <item>Cardiologia</item>
+        <item>Endodoncia</item>
+        <item>Medicina Forense</item>
+        <item>Pediatria</item>
+        <item>Cardiologia Pediatrica</item>
+        <item>Estomatologia y Cirugia Oral</item>
+        <item>Medicina Interna</item>
+        <item>Periodoncia</item>
+        <item>Cirugia Cardiovascular</item>
+        <item>Gastroenterologia</item>
+        <item>Medicina Nuclear</item>
+        <item>Psiquiatria</item>
+        <item>Cirugia De Cabeza y Cuello</item>
+        <item>Gastroenterologia Pediatrica</item>
+        <item>Nefrologia</item>
+        <item>Psiquiatria Pediatrica</item>
+        <item>Cirugia De Mama y Tumores De Tejidos Blandos</item>
+        <item>Genetica Medica</item>
+        <item>Nefrologia Pediatrica</item>
+        <item>Radiologia E Imagenes Diagnosticas</item>
+        <item>Cirugia De Torax</item>
+        <item>Geriatria</item>
+        <item>Neonatologia</item>
+        <item>Radiologia Oral y Maxilofacial</item>
+        <item>Cirugia Gastrointestinal</item>
+        <item>Ginecologia y Obstetricia</item>
+        <item>Neumologia</item>
+        <item>Radioterapia</item>
+        <item>Cirugia General</item>
+        <item>Hematologia</item>
+        <item>Neumologia Pediatrica</item>
+        <item>Rehabilitacion Oral</item>
+        <item>Cirugia Maxilofacial</item>
+        <item>Hematologia Pediatrica</item>
+        <item>Neurocirugia</item>
+        <item>Reumatologia</item>
+        <item>Cirugia Oncologica</item>
+        <item>Hepatologia</item>
+        <item>Neurologia</item>
+        <item>Reumatologia Pediatrica</item>
+        <item>Cirugia Oral</item>
+        <item>Infectologia</item>
+        <item>Neurologia Pediatrica</item>
+        <item>Salud Familiar y Comunitaria</item>
+        <item>Cirugia Pediatrica</item>
+        <item>Mastologia</item>
+        <item>Odontopediatria</item>
+        <item>Sexologia Clinica</item>
+        <item>Cirugia Plastica, Estetica y reconstructiva</item>
+        <item>Medicina Aeroespacial</item>
+        <item>Oftalmologia</item>
+        <item>Toxicologia Clinica</item>
+        <item>Cirugia Vascular</item>
+        <item>Medicina Alternativa (Ayurveda)</item>
+        <item>Oncohematologia Pediatrica</item>
+        <item>Trasplantes</item>
+        <item>Coloproctologia</item>
+        <item>Medicina Alternativa (Homeopatia)</item>
+        <item>Oncologia</item>
+        <item>Urologia</item>
+        <item>Dermatologia</item>
+        <item>Medicina Alternativa (Medicina Tradicional China)</item>
+        <item>Oncologia Pediatrica</item>
+        <item>Medicina Del Deporte</item>
+        <item>Medicina Alternativa (Naturopatia)</item>
+        <item>Ortodoncia</item>
+    </string-array>
+
+    <string-array name="enfermerias">
+        <item>--</item>
+        <item>Enfermero(a) Profesional Especializada</item>
+        <item>Enfermero(a) Profesional</item>
+        <item>Auxiliar de Enefermería</item>
+    </string-array>
+
+    <string-array name="otrosprofesionales">
+        <item>--</item>
+        <item>Fonoaudiólogo</item>
+        <item>Optómetra</item>
+        <item>Ortoptico</item>
+        <item>Trabajo Social</item>
+        <item>Psicologo(a)</item>
+        <item>Neuropsicólo(a)</item>
+        <item>Nutricionista</item>
+        <item>Higienista Oral</item>
+        <item>Auxiliar de consultorio dental</item>
+        <item>Auxiliar de laboratorio Clínico</item>
+
+    </string-array>
+
+    <string-array name="consulta">
+        <item>--</item>
+        <item>Teleconsulta</item>
+        <item>Telemedicina</item>
+        <item>Domicilio</item>
+        <item>Prioritaria (24Hrs)</item>
+        <item>Prioritaria (48Hrs)</item>
+        <item>No Prioritaria</item>
+    </string-array>
+
+    <string-array name="consulta_enf">
+        <item>--</item>
+        <item>Teleconsulta</item>
+        <item>Asesoría Virtual</item>
+        <item>Enfemero(a) en casa</item>
+        <item>Aplicación de Medicamentos</item>
+        <item>Acompañamiento de Hospitalización</item>
+        <item>Acompañamiento a citas Médicas</item>
+    </string-array>
+
+    <string-array name="tipoatencion_esp">
+        <item>--</item>
+        <item>Consulta especializada por primera vez</item>
+        <item>Consulta especializada de control</item>
+        <item>Interconsulta espacializada</item>
+        <item>Interconsulta espacializada de control</item>
+    </string-array>
+
+    <string-array name="tipoatencion_gnr">
+        <item>--</item>
+        <item>Consulta Medicina General Primera vez</item>
+        <item>Consulta Medicina General de Control</item>
+        <item>Consulta Medicina General de Enlace como especialista</item>
+        <item>Contrareferencia</item>
+    </string-array>
+
+    <string-array name="medicos">
+        <item>Dr. Martin Salas</item>
+        <item>Dr. Martin Salas</item>
+        <item>Dr. Martin Salas</item>
+        <item>Dr. Martin Salas</item>
+        <item>Dr. Martin Salas</item>
+    </string-array>
+
+    <string-array name="medicosMSJ">
+        <item>La felicidad radica ante todo, en la salud</item>
+        <item>El secreto para tener buena salud es que el cuerpo se agite y que la mente repose.</item>
+        <item>Mensaje personalizado</item>
+        <item>Mensaje personalizado</item>
+        <item>La posesión de la salud es como la de la hacienda, que se goza gastando, y si no se gasta, no se goza</item>
+    </string-array>
+
+    <!--   ARRAYS REGISTRO PACIENTE-->
+
+    <!--                              TIPO DE DOCUMENTO, GENERO, ESTRATO Y ESTADO CIVIL -->
+
+    <string-array name="tipdoc">
+        <item>--</item>
+        <item>CC</item>
+        <item>CE</item>
+        <item>NI</item>
+        <item>PA</item>
+        <item>SE</item>
+        <item>TI</item>
+    </string-array>
+
+    <string-array name="genero">
+        <item>--</item>
+        <item>Femenino</item>
+        <item>Masculino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="ocupacion">
+        <item>--</item>
+        <item>Estudiante</item>
+        <item>Ingeniero (a)</item>
+        <item>Arquitecto (a)</item>
+        <item>Medico (a)</item>
+        <item>Profesor (a)</item>
+        <item>Enfermero (a)</item>
+        <item>Contador (a)</item>
+        <item>Psicologo (a)</item>
+        <item>Administrador (a)</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="estrato">
+        <item>--</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="grupoe">
+        <item>--</item>
+        <item>Indigena</item>
+        <item>Negro-Afrocolombiano (a)</item>
+        <item>Palenquero (a)</item>
+        <item>Raizal</item>
+        <item>Gitano (a)</item>
+    </string-array>
+
+    <string-array name="estado">
+        <item>--</item>
+        <item>Soltero(a)</item>
+        <item>Casado(a)</item>
+        <item>Viudo(a)</item>
+        <item>Divorciado(a)</item>
+        <item>Separado(a)</item>
+        <item>Unión Libre</item>
+    </string-array>
+
+
+    <!--                                                             EPS Y ARL -->
+
+    <string-array name="EPSlist">
+        <item>--</item>
+        <item>CAFESALUD</item>
+        <item>COOMEVA</item>
+        <item>SALUDCOOP</item>
+        <item>OTRA</item>
+    </string-array>
+
+    <string-array name="ARLlist">
+        <item>--</item>
+        <item>SURA</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="regimen">
+        <item>--</item>
+        <item>Regimen 1</item>
+        <item>Regimen 2</item>
+        <item>Regimen 3</item>
+    </string-array>
+
+    <string-array name="discapacidades">
+        <item>--</item>
+        <item>Ninguna</item>
+        <item>Alteraciones corporales que afectan el movimiento y desplazamiento</item>
+        <item>Disminución en el sentido de audición</item>
+        <item>Disminución en el sentido de la vista</item>
+        <item>Presento dos o más tipos de discapacidad</item>
+        <item>Otra</item>
+    </string-array>
+
+
+    <!--                                                             CALENDARIO -->
+
+    <string-array name="dias">
+        <item>--</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="meses">
+        <item>--</item>
+        <item>ENE</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>ABR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AGO</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DEC</item>
+    </string-array>
+
+    <!--                                                             NOMENCLATURA DIRECCION -->
+    <string-array name="nomenclatura">
+        <item>--</item>
+        <item>Administración</item>
+        <item>Agencia</item>
+        <item>Agrupación</item>
+        <item>Almacén</item>
+        <item>Altillo</item>
+        <item>Apartado</item>
+        <item>Apartamento</item>
+        <item>Barrio</item>
+        <item>Bloque</item>
+        <item>Bodega</item>
+        <item>Camino</item>
+        <item>Casa</item>
+        <item>Celula</item>
+        <item>Centro Comercial</item>
+        <item>Ciudadela</item>
+        <item>Conjunto</item>
+        <item>Conjunto Residencial</item>
+        <item>Consultorio</item>
+        <item>Deposito</item>
+        <item>Deposito Sotano</item>
+        <item>Edificio</item>
+        <item>Entrada</item>
+        <item>Esquina</item>
+        <item>Etapa</item>
+        <item>Exterior</item>
+        <item>Finca</item>
+        <item>Garaje</item>
+        <item>Garaje Sotano</item>
+        <item>Hacienda</item>
+        <item>Interior</item>
+        <item>Local</item>
+        <item>Local Mezzanine</item>
+        <item>Lote</item>
+        <item>Manzana</item>
+        <item>Mezzanine</item>
+        <item>Modulo</item>
+        <item>Oficina</item>
+        <item>Parcela</item>
+        <item>Parque</item>
+        <item>Parqueadero</item>
+        <item>Pasaje</item>
+        <item>Paseo</item>
+        <item>Penthouse</item>
+        <item>Piso</item>
+        <item>Planta</item>
+        <item>Porteria</item>
+        <item>Predio</item>
+        <item>Puente</item>
+        <item>Puesto</item>
+        <item>Salón</item>
+        <item>Salón Comunal</item>
+        <item>Sector</item>
+        <item>Semisotano</item>
+        <item>Solar</item>
+        <item>Sotano</item>
+        <item>Suite</item>
+        <item>Super Manzana</item>
+        <item>Terminal</item>
+        <item>Terraza</item>
+        <item>Unidad</item>
+        <item>Unidad Residencial</item>
+        <item>Urbanización</item>
+        <item>Zona</item>
+        <item>Zona Franca</item>
+    </string-array>
+
+    <string-array name="abreviatura">
+        <item></item>
+        <item>AD</item>
+        <item>AG</item>
+        <item>AGP</item>
+        <item>ALM</item>
+        <item>AL</item>
+        <item>APTDO</item>
+        <item>AP</item>
+        <item>BRR</item>
+        <item>BL</item>
+        <item>BG</item>
+        <item>CN</item>
+        <item>CA</item>
+        <item>CEL</item>
+        <item>CC</item>
+        <item>CD</item>
+        <item>CONJ</item>
+        <item>CON</item>
+        <item>CS</item>
+        <item>DP</item>
+        <item>DS</item>
+        <item>ED</item>
+        <item>EN</item>
+        <item>ESQ</item>
+        <item>ET</item>
+        <item>EX</item>
+        <item>FCA</item>
+        <item>GJ</item>
+        <item>GS</item>
+        <item>HC</item>
+        <item>IN</item>
+        <item>LC</item>
+        <item>LM</item>
+        <item>LT</item>
+        <item>MZ</item>
+        <item>MN</item>
+        <item>MD</item>
+        <item>OF</item>
+        <item>PA</item>
+        <item>PAR</item>
+        <item>PQ</item>
+        <item>PJ</item>
+        <item>PS</item>
+        <item>PH</item>
+        <item>P</item>
+        <item>PL</item>
+        <item>POR</item>
+        <item>PD</item>
+        <item>PN</item>
+        <item>PT</item>
+        <item>SA</item>
+        <item>SC</item>
+        <item>SEC</item>
+        <item>SS</item>
+        <item>SL</item>
+        <item>ST</item>
+        <item>SUITE</item>
+        <item>SM</item>
+        <item>TER</item>
+        <item>TZ</item>
+        <item>UN</item>
+        <item>UR</item>
+        <item>URB</item>
+        <item>ZN</item>
+        <item>ZF</item>
+    </string-array>
+
+
+    <string-array name="letras">
+        <item>--</item>
+        <item>A</item>
+        <item>AA</item>
+        <item>AB</item>
+        <item>AC</item>
+        <item>AD</item>
+        <item>AE</item>
+        <item>AF</item>
+        <item>AG</item>
+        <item>AH</item>
+        <item>B</item>
+        <item>BA</item>
+        <item>BB</item>
+        <item>BC</item>
+        <item>BD</item>
+        <item>BE</item>
+        <item>BF</item>
+        <item>BG</item>
+        <item>BH</item>
+        <item>C</item>
+        <item>CA</item>
+        <item>CB</item>
+        <item>CC</item>
+        <item>CD</item>
+        <item>CE</item>
+        <item>CF</item>
+        <item>CG</item>
+        <item>CH</item>
+        <item>D</item>
+        <item>DA</item>
+        <item>DB</item>
+        <item>DC</item>
+        <item>DD</item>
+        <item>DE</item>
+        <item>DF</item>
+        <item>DG</item>
+        <item>DH</item>
+        <item>E</item>
+        <item>EA</item>
+        <item>EB</item>
+        <item>EC</item>
+        <item>ED</item>
+        <item>EE</item>
+        <item>EF</item>
+        <item>EG</item>
+        <item>EH</item>
+        <item>F</item>
+        <item>FA</item>
+        <item>FB</item>
+        <item>FC</item>
+        <item>FD</item>
+        <item>FE</item>
+        <item>FF</item>
+        <item>FG</item>
+        <item>FH</item>
+        <item>G</item>
+        <item>GA</item>
+        <item>GB</item>
+        <item>GC</item>
+        <item>GD</item>
+        <item>GE</item>
+        <item>GF</item>
+        <item>GG</item>
+        <item>GH</item>
+        <item>H</item>
+        <item>HA</item>
+        <item>HB</item>
+        <item>HC</item>
+        <item>HD</item>
+        <item>HE</item>
+        <item>HF</item>
+        <item>HG</item>
+        <item>HH</item>
+    </string-array>
+
+    <string-array name="cardinales">
+        <item>--</item>
+        <item>NORTE</item>
+        <item>SUR</item>
+        <item>ESTE</item>
+        <item>OESTE</item>
+    </string-array>
+
+    <string-array name="estandar">
+        <item>--</item>
+        <item>AVENIDA</item>
+        <item>BULEVAR</item>
+        <item>CALLE</item>
+        <item>CARRERA</item>
+        <item>CARRETERA</item>
+        <item>CIRCULAR</item>
+        <item>CIRCUNVALAR</item>
+        <item>DIAGONAL</item>
+        <item>TRANSVERSAL</item>
+        <item>TRONCAL</item>
+        <item>VARIANTE</item>
+        <item>VIA</item>
+        <item>CORREGIMIENTO</item>
+        <item>KILÓMETRO</item>
+        <item>VEREDA</item>
+        <item>AUTOPISTA</item>
+    </string-array>
+
+    <string-array name="standar">
+        <item></item>
+        <item>AV</item>
+        <item>BLV</item>
+        <item>CL</item>
+        <item>CR</item>
+        <item>CRT</item>
+        <item>CIR</item>
+        <item>CRV</item>
+        <item>DG</item>
+        <item>TV</item>
+        <item>TC</item>
+        <item>VT</item>
+        <item>VI</item>
+        <item>C</item>
+        <item>KM</item>
+        <item>VRD</item>
+        <item>AUT</item>
+    </string-array>
+
+
+    <!--                                                             DEPARTAMENTOS Y MUNICIPIOS -->
+
+    <string-array name="departamentos">
+        <item>--</item>
+        <item>AMAZONAS</item>
+        <item>ANTIOQUIA</item>
+        <item>ARAUCA</item>
+        <item>ATLANTICO</item>
+        <item>BOLIVAR</item>
+        <item>BOYACA</item>
+        <item>CALDAS</item>
+        <item>CAQUETA</item>
+        <item>CASANARE</item>
+        <item>CAUCA</item>
+        <item>CESAR</item>
+        <item>CHOCO</item>
+        <item>CORDOBA</item>
+        <item>CUNDINAMARCA</item>
+        <item>GUAINIA</item>
+        <item>GUAJIRA</item>
+        <item>GUAVIARE</item>
+        <item>HUILA</item>
+        <item>MAGDALENA</item>
+        <item>META</item>
+        <item>N SANTANDER</item>
+        <item>NARINO</item>
+        <item>PUTUMAYO</item>
+        <item>QUINDIO</item>
+        <item>RISARALDA</item>
+        <item>SAN ANDRES</item>
+        <item>SANTANDER</item>
+        <item>SUCRE</item>
+        <item>TOLIMA</item>
+        <item>VALLE DEL CAUCA</item>
+        <item>VAUPES</item>
+        <item>VICHADA</item>
+    </string-array>
+
+    <string-array name="mun1">
+        <item>--</item>
+        <item>LETICIA</item>
+        <item>EL ENCANTO</item>
+        <item>LA CHORRERA</item>
+        <item>LA PEDRERA</item>
+        <item>LA VICTORIA</item>
+        <item>MIRITI-PARANA</item>
+        <item>PUERTO ALEGRIA</item>
+        <item>PUERTO ARICA</item>
+        <item>PUERTO NARINO</item>
+        <item>SANTANDER</item>
+        <item>TARAPACA</item>
+    </string-array>
+
+    <string-array name="mun2">
+        <item>--</item>
+        <item>ABEJORRAL</item>
+        <item>ABRIAQUI</item>
+        <item>ALEJANDRIA</item>
+        <item>AMAGA</item>
+        <item>AMALFI</item>
+        <item>ANDES</item>
+        <item>ANGELOPOLIS</item>
+        <item>ANGOSTURA</item>
+        <item>ANORI</item>
+        <item>ANZA</item>
+        <item>APARTADO</item>
+        <item>ARBOLETES</item>
+        <item>ARGELIA</item>
+        <item>ARMENIA</item>
+        <item>BARBOSA</item>
+        <item>BELLO</item>
+        <item>BELMIRA</item>
+        <item>BETANIA</item>
+        <item>BETULIA</item>
+        <item>BRICENO</item>
+        <item>BURITICA</item>
+        <item>CACERES</item>
+        <item>CAICEDO</item>
+        <item>CALDAS</item>
+        <item>CAMPAMENTO</item>
+        <item>CANASGORDAS</item>
+        <item>CARACOLI</item>
+        <item>CARAMANTA</item>
+        <item>CAREPA</item>
+        <item>CARMEN DE VIBORAL</item>
+        <item>CAROLINA</item>
+        <item>CAUCASIA</item>
+        <item>CHIGORODO</item>
+        <item>CISNEROS</item>
+        <item>CIUDAD BOLIVAR</item>
+        <item>COCORNA</item>
+        <item>CONCEPCION</item>
+        <item>CONCORDIA</item>
+        <item>COPACABANA</item>
+        <item>DABEIBA</item>
+        <item>DON MATIAS</item>
+        <item>EBEJICO</item>
+        <item>EL BAGRE</item>
+        <item>ENTRERRIOS</item>
+        <item>ENVIGADO</item>
+        <item>FREDONIA</item>
+        <item>FRONTINO</item>
+        <item>GIRALDO</item>
+        <item>GIRARDOTA</item>
+        <item>GOMEZ PLATA</item>
+        <item>GRANADA</item>
+        <item>GUADALUPE</item>
+        <item>GUARNE</item>
+        <item>GUATAPE</item>
+        <item>HELICONIA</item>
+        <item>HISPANIA</item>
+        <item>ITAGÜÍ</item>
+        <item>ITUANGO</item>
+        <item>JARDIN</item>
+        <item>JERICO</item>
+        <item>LA CEJA</item>
+        <item>LA ESTRELLA</item>
+        <item>LA PINTADA</item>
+        <item>LA UNION</item>
+        <item>LIBORINA</item>
+        <item>MACEO</item>
+        <item>MARINILLA</item>
+        <item>MEDELLIN</item>
+        <item>MONTEBELLO</item>
+        <item>MURINDO</item>
+        <item>MUTATA</item>
+        <item>NARINO</item>
+        <item>NECHI</item>
+        <item>NECOCLI</item>
+        <item>OLAYA</item>
+        <item>PENOL</item>
+        <item>PEQUE</item>
+        <item>PUEBLORRICO</item>
+        <item>PUERTO BERRIO</item>
+        <item>PUERTO NARE</item>
+        <item>PUERTO TRIUNFO</item>
+        <item>REMEDIOS</item>
+        <item>RETIRO</item>
+        <item>RIONEGRO</item>
+        <item>SABANALARGA</item>
+        <item>SABANETA</item>
+        <item>SALGAR</item>
+        <item>SAN ANDRES</item>
+        <item>SAN CARLOS</item>
+        <item>SAN FRANCISCO</item>
+        <item>SAN JERONIMO</item>
+        <item>SAN JOSE DE LA MONTANA</item>
+        <item>SAN JUAN DE URABA</item>
+        <item>SAN LUIS</item>
+        <item>SAN PEDRO</item>
+        <item>SAN PEDRO DE URABA</item>
+        <item>SAN RAFAEL</item>
+        <item>SAN ROQUE</item>
+        <item>SAN VICENTE</item>
+        <item>SANTA BARBARA</item>
+        <item>SANTA FE DE ANTIOQUIA</item>
+        <item>SANTA ROSA DE OSOS</item>
+        <item>SANTO DOMINGO</item>
+        <item>SANTUARIO</item>
+        <item>SEGOVIA</item>
+        <item>SONSON</item>
+        <item>SOPETRAN</item>
+        <item>TAMESIS</item>
+        <item>TARAZA</item>
+        <item>TARSO</item>
+        <item>TITIRIBI</item>
+        <item>TOLEDO</item>
+        <item>TURBO</item>
+        <item>URAMITA</item>
+        <item>URRAO</item>
+        <item>VALDIVIA</item>
+        <item>VALPARAISO</item>
+        <item>VEGACHI</item>
+        <item>VENECIA</item>
+        <item>VIGIA DEL FUERTE</item>
+        <item>YALI</item>
+        <item>YARUMAL</item>
+        <item>YOLOMBO</item>
+        <item>YONDO</item>
+        <item>ZARAGOZA</item>
+    </string-array>
+
+    <string-array name="mun3">
+        <item>--</item>
+        <item>ARAUCA</item>
+        <item>ARAUQUITA</item>
+        <item>CRAVO NORTE</item>
+        <item>FORTUL</item>
+        <item>PUERTO RONDON</item>
+        <item>SARAVENA</item>
+        <item>TAME</item>
+    </string-array>
+
+    <string-array name="mun4">
+        <item>--</item>
+        <item>BARANOA</item>
+        <item>BARRANQUILLA</item>
+        <item>CAMPO DE LA CRUZ</item>
+        <item>CANDELARIA</item>
+        <item>GALAPA</item>
+        <item>JUAN DE ACOSTA</item>
+        <item>LURUACO</item>
+        <item>MALAMBO</item>
+        <item>MANATI</item>
+        <item>PALMAR DE VARELA</item>
+        <item>PIOJO</item>
+        <item>POLONUEVO</item>
+        <item>PONEDERA</item>
+        <item>PUERTO COLOMBIA</item>
+        <item>REPELON</item>
+        <item>SABANAGRANDE</item>
+        <item>SABANALARGA</item>
+        <item>SANTA LUCIA</item>
+        <item>SANTO TOMAS</item>
+        <item>SOLEDAD</item>
+        <item>SUAN</item>
+        <item>TUBARA</item>
+        <item>USIACURI</item>
+    </string-array>
+
+    <string-array name="mun5">
+        <item>--</item>
+        <item>ACHI</item>
+        <item>ALTOS DEL ROSARIO</item>
+        <item>ARENAL</item>
+        <item>ARJONA</item>
+        <item>ARROYOHONDO</item>
+        <item>BARRANCO DE LOBA</item>
+        <item>CALAMAR</item>
+        <item>CANTAGALLO</item>
+        <item>CARTAGENA DE INDIAS</item>
+        <item>CICUCO</item>
+        <item>CLEMENCIA</item>
+        <item>CORDOBA</item>
+        <item>EL CARMEN DE BOLIVAR</item>
+        <item>EL GUAMO</item>
+        <item>EL PENON</item>
+        <item>HATILLO DE LOBA</item>
+        <item>MAGANGUE</item>
+        <item>MAHATES</item>
+        <item>MARGARITA</item>
+        <item>MARIA LA BAJA</item>
+        <item>MOMPOS</item>
+        <item>MONTECRISTO</item>
+        <item>MORALES</item>
+        <item>PINILLOS</item>
+        <item>REGIDOR</item>
+        <item>RIOVIEJO</item>
+        <item>SAN CRISTOBAL</item>
+        <item>SAN ESTANISLAO</item>
+        <item>SAN FERNANDO</item>
+        <item>SAN JACINTO</item>
+        <item>SAN JACINTO DEL CAUCA</item>
+        <item>SAN JUAN NEPOMUCENO</item>
+        <item>SAN MARTIN DE LOBA</item>
+        <item>SAN PABLO</item>
+        <item>SANTA CATALINA</item>
+        <item>SANTA ROSA</item>
+        <item>SANTA ROSA DEL SUR</item>
+        <item>SIMITI</item>
+        <item>SOPLAVIENTO</item>
+        <item>TALAIGUA NUEVO</item>
+        <item>TIQUISIO</item>
+        <item>TURBACO</item>
+        <item>TURBANA</item>
+        <item>VILLANUEVA</item>
+        <item>ZAMBRANO</item>
+    </string-array>
+
+    <string-array name="mun6">
+        <item>--</item>
+        <item>ALMEIDA</item>
+        <item>AQUITANIA</item>
+        <item>ARCABUCO</item>
+        <item>BELEN</item>
+        <item>BERBEO</item>
+        <item>BETEITIVA</item>
+        <item>BOAVITA</item>
+        <item>BOYACA</item>
+        <item>BRICENO</item>
+        <item>BUENAVISTA</item>
+        <item>BUSBANZA</item>
+        <item>CALDAS</item>
+        <item>CAMPOHERMOSO</item>
+        <item>CERINZA</item>
+        <item>CHINAVITA</item>
+        <item>CHIQUINQUIRA</item>
+        <item>CHIQUIZA</item>
+        <item>CHISCAS</item>
+        <item>CHITA</item>
+        <item>CHITARAQUE</item>
+        <item>CHIVATA</item>
+        <item>CHIVOR</item>
+        <item>CIENEGA</item>
+        <item>COMBITA</item>
+        <item>COPER</item>
+        <item>CORRALES</item>
+        <item>COVARACHIA</item>
+        <item>CUBARA</item>
+        <item>CUCAITA</item>
+        <item>CUITIVA</item>
+        <item>DUITAMA</item>
+        <item>EL COCUY</item>
+        <item>EL ESPINO</item>
+        <item>FIRAVITOBA</item>
+        <item>FLORESTA</item>
+        <item>GACHANTIVA</item>
+        <item>GAMEZA</item>
+        <item>GARAGOA</item>
+        <item>GUACAMAYAS</item>
+        <item>GUATEQUE</item>
+        <item>GUAYATA</item>
+        <item>GUICAN</item>
+        <item>IZA</item>
+        <item>JENESANO</item>
+        <item>JERICO</item>
+        <item>LA CAPILLA</item>
+        <item>LA UVITA</item>
+        <item>LA VICTORIA</item>
+        <item>LABRANZAGRANDE</item>
+        <item>MACANAL</item>
+        <item>MARIPI</item>
+        <item>MIRAFLORES</item>
+        <item>MONGUA</item>
+        <item>MONGUI</item>
+        <item>MONIQUIRA</item>
+        <item>MOTAVITA</item>
+        <item>MUZO</item>
+        <item>NOBSA</item>
+        <item>NUEVO COLON</item>
+        <item>OICATA</item>
+        <item>OTANCHE</item>
+        <item>PACHAVITA</item>
+        <item>PAEZ</item>
+        <item>PAIPA</item>
+        <item>PAJARITO</item>
+        <item>PANQUEBA</item>
+        <item>PAUNA</item>
+        <item>PAYA</item>
+        <item>PAZ DE RIO</item>
+        <item>PESCA</item>
+        <item>PISVA</item>
+        <item>PUERTO BOYACA</item>
+        <item>QUIPAMA</item>
+        <item>RAMIRIQUI</item>
+        <item>RAQUIRA</item>
+        <item>RONDON</item>
+        <item>SABOYA</item>
+        <item>SACHICA</item>
+        <item>SAMACA</item>
+        <item>SAN EDUARDO</item>
+        <item>SAN JOSEDE PARE</item>
+        <item>SAN LUIS DE GACENO</item>
+        <item>SAN MATEO</item>
+        <item>SAN MIGUEL DE SEMA</item>
+        <item>SAN PABLO DE BORBUR</item>
+        <item>SANTA MARIA</item>
+        <item>SANTA ROSA DE VITERBO</item>
+        <item>SANTA SOFIA</item>
+        <item>SANTANA</item>
+        <item>SATIVANORTE</item>
+        <item>SATIVASUR</item>
+        <item>SIACHOQUE</item>
+        <item>SOATA</item>
+        <item>SOCHA</item>
+        <item>SOCOTA</item>
+        <item>SOGAMOSO</item>
+        <item>SOMONDOCO</item>
+        <item>SORA</item>
+        <item>SORACA</item>
+        <item>SOTAQUIRA</item>
+        <item>SUSACON</item>
+        <item>SUTAMARCHAN</item>
+        <item>SUTATENZA</item>
+        <item>TASCO</item>
+        <item>TENZA</item>
+        <item>TIBANA</item>
+        <item>TIBASOSA</item>
+        <item>TINJACA</item>
+        <item>TIPACOQUE</item>
+        <item>TOCA</item>
+        <item>TOGÜÍ</item>
+        <item>TOPAGA</item>
+        <item>TOTA</item>
+        <item>TUNJA</item>
+        <item>TUNUNGUA</item>
+        <item>TURMEQUE</item>
+        <item>TUTA</item>
+        <item>TUTAZA</item>
+        <item>UMBITA</item>
+        <item>VENTAQUEMADA</item>
+        <item>VILLA DE LEIVA</item>
+        <item>VIRACACHA</item>
+        <item>ZETAQUIRA</item>
+    </string-array>
+
+    <string-array name="mun7">
+        <item>--</item>
+        <item>AGUADAS</item>
+        <item>ANSERMA</item>
+        <item>ARANZAZU</item>
+        <item>BELALCAZAR</item>
+        <item>CHINCHINA</item>
+        <item>FILADELFIA</item>
+        <item>LA DORADA</item>
+        <item>LA MERCED</item>
+        <item>MANIZALES</item>
+        <item>MANZANARES</item>
+        <item>MARMATO</item>
+        <item>MARQUETALIA</item>
+        <item>MARULANDA</item>
+        <item>NEIRA</item>
+        <item>NORCASIA</item>
+        <item>PACORA</item>
+        <item>PALESTINA</item>
+        <item>PENSILVANIA</item>
+        <item>RIOSUCIO</item>
+        <item>RISARALDA</item>
+        <item>SALAMINA</item>
+        <item>SAMANA</item>
+        <item>SAN JOSE</item>
+        <item>SUPIA</item>
+        <item>VICTORIA</item>
+        <item>VILLAMARIA</item>
+        <item>VITERBO</item>
+    </string-array>
+
+    <string-array name="mun8">
+        <item>--</item>
+        <item>ALBANIA</item>
+        <item>BELEN DE LOS ANDAQUIES</item>
+        <item>CARTAGENA DEL CHAIRA</item>
+        <item>CURILLO</item>
+        <item>EL DONCELLO</item>
+        <item>EL PAUJIL</item>
+        <item>FLORENCIA</item>
+        <item>MILAN</item>
+        <item>MONTANITA</item>
+        <item>MORELIA</item>
+        <item>PUERTO RICO</item>
+        <item>SAN JOSE DEL FRAGUA</item>
+        <item>SAN VICENTE DEL CAGUAN</item>
+        <item>SOLANO</item>
+        <item>SOLITA</item>
+        <item>VALPARAISO</item>
+    </string-array>
+
+    <string-array name="mun9">
+        <item>--</item>
+        <item>AGUAZUL</item>
+        <item>CHAMEZA</item>
+        <item>HATO COROZAL</item>
+        <item>LA SALINA</item>
+        <item>MANI</item>
+        <item>MONTERREY</item>
+        <item>NUNCHIA</item>
+        <item>OROCUE</item>
+        <item>PAZ DE ARIPORO</item>
+        <item>PORE</item>
+        <item>RECETOR</item>
+        <item>SABANALARGA</item>
+        <item>SACAMA</item>
+        <item>SAN LUIS DE PALENQUE</item>
+        <item>TAMARA</item>
+        <item>TAURAMENA</item>
+        <item>TRINIDAD</item>
+        <item>VILLANUEVA</item>
+        <item>YOPAL</item>
+    </string-array>
+
+    <string-array name="mun10">
+        <item>--</item>
+        <item>ALMAGUER</item>
+        <item>ARGELIA</item>
+        <item>BALBOA</item>
+        <item>BOLIVAR</item>
+        <item>BUENOS AIRES</item>
+        <item>CAJIBIO</item>
+        <item>CALDONO</item>
+        <item>CALOTO</item>
+        <item>CORINTO</item>
+        <item>EL TAMBO</item>
+        <item>FLORENCIA</item>
+        <item>GUAPI</item>
+        <item>INZA</item>
+        <item>JAMBALO</item>
+        <item>LA SIERRA</item>
+        <item>LA VEGA</item>
+        <item>LOPEZ</item>
+        <item>MERCADERES</item>
+        <item>MIRANDA</item>
+        <item>MORALES</item>
+        <item>PADILLA</item>
+        <item>PAEZ</item>
+        <item>PATIA</item>
+        <item>PIAMONTE</item>
+        <item>PIENDAMO</item>
+        <item>POPAYAN</item>
+        <item>PUERTO TEJADA</item>
+        <item>PURACE</item>
+        <item>ROSAS</item>
+        <item>SAN SEBASTIAN</item>
+        <item>SANTA ROSA</item>
+        <item>SANTANDER DE QUILICHAO</item>
+        <item>SILVIA</item>
+        <item>SOTARA</item>
+        <item>SUAREZ</item>
+        <item>SUCRE</item>
+        <item>TIMBIO</item>
+        <item>TIMBIQUI</item>
+        <item>TORIBIO</item>
+        <item>TOTORO</item>
+        <item>VILLA RICA</item>
+    </string-array>
+
+    <string-array name="mun11">
+        <item>--</item>
+        <item>AGUACHICA</item>
+        <item>AGUSTIN CODAZZI</item>
+        <item>ASTREA</item>
+        <item>BECERRIL</item>
+        <item>BOSCONIA</item>
+        <item>CHIMI HAGUA</item>
+        <item>CHIRIGUANA</item>
+        <item>CURUMANI</item>
+        <item>EL COPEY</item>
+        <item>EL PASO</item>
+        <item>GAMARRA</item>
+        <item>GONZALEZ</item>
+        <item>LA GLORIA</item>
+        <item>LA JAGUA DE IBIRICO</item>
+        <item>LA PAZ</item>
+        <item>MANAURE BALCON DEL CESAR</item>
+        <item>PAILITAS</item>
+        <item>PELAYA</item>
+        <item>PUEBLO BELLO</item>
+        <item>RIO DE ORO</item>
+        <item>SAN ALBERTO</item>
+        <item>SAN DIEGO</item>
+        <item>SAN MARTIN</item>
+        <item>TAMALAMEQUE</item>
+        <item>VALLEDUPAR</item>
+    </string-array>
+
+    <string-array name="mun12">
+        <item>--</item>
+        <item>ACANDI</item>
+        <item>ALTO BAUDO</item>
+        <item>ATRATO</item>
+        <item>BAGADO</item>
+        <item>BAHIA SOLANO</item>
+        <item>BAJO BAUDO</item>
+        <item>BOJAYA</item>
+        <item>CARMEN DEL DARIEN</item>
+        <item>CERTEGUI</item>
+        <item>CONDOTO</item>
+        <item>EL CANTON DEL SAN PABLO</item>
+        <item>EL CARMEN</item>
+        <item>EL LITORAL DEL SAN JUAN</item>
+        <item>ITSMINA</item>
+        <item>JURADO</item>
+        <item>LLORO</item>
+        <item>MEDIO ATRATO</item>
+        <item>MEDIO BAUDO</item>
+        <item>MEDIO SAN JUAN</item>
+        <item>NOVITA</item>
+        <item>NUQUI</item>
+        <item>QUIBDO</item>
+        <item>RIO IRO</item>
+        <item>RIO QUITO</item>
+        <item>RIOSUCIO</item>
+        <item>SAN JOSE DEL PALMAR</item>
+        <item>SIPI</item>
+        <item>TADO</item>
+        <item>UNGUIA</item>
+        <item>UNION PANAMERICANA</item>
+    </string-array>
+
+    <string-array name="mun13">
+        <item>--</item>
+        <item>AYAPEL</item>
+        <item>BUENAVISTA</item>
+        <item>CANALETE</item>
+        <item>CERETE</item>
+        <item>CHIMA</item>
+        <item>CHINU</item>
+        <item>CIENAGA DE ORO</item>
+        <item>COTORRA</item>
+        <item>LA APARTADA</item>
+        <item>LORICA</item>
+        <item>LOS CORDOBAS</item>
+        <item>MOMIL</item>
+        <item>MONITOS</item>
+        <item>MONTELIBANO</item>
+        <item>MONTERIA</item>
+        <item>PLANETA RICA</item>
+        <item>PUEBLO NUEVO</item>
+        <item>PUERTO ESCONDIDO</item>
+        <item>PUERTO LIBERTADOR</item>
+        <item>PURISIMA</item>
+        <item>SAHAGUN</item>
+        <item>SAN ANDRES DE SOTAVENTO</item>
+        <item>SAN ANTERO</item>
+        <item>SAN BERNARDO DEL VIENTO</item>
+        <item>SAN CARLOS</item>
+        <item>SAN PELAYO</item>
+        <item>TIERRALTA</item>
+        <item>VALENCIA</item>
+    </string-array>
+
+    <string-array name="mun14">
+        <item>--</item>
+        <item>AGUA DE DIOS</item>
+        <item>ALBAN</item>
+        <item>ANAPOIMA</item>
+        <item>ANOLAIMA</item>
+        <item>APULO</item>
+        <item>ARBELAEZ</item>
+        <item>BELTRAN</item>
+        <item>BITUIMA</item>
+        <item>BOJACA</item>
+        <item>CABRERA</item>
+        <item>CACHIPAY</item>
+        <item>CAJICA</item>
+        <item>CAPARRAPI</item>
+        <item>CAQUEZA</item>
+        <item>CARMEN DE CARUPA</item>
+        <item>CHAGUANI</item>
+        <item>CHIA</item>
+        <item>CHIPAQUE</item>
+        <item>CHOACHI</item>
+        <item>CHOCONTA</item>
+        <item>COGUA</item>
+        <item>COTA</item>
+        <item>CUCUNUBA</item>
+        <item>EL COLEGIO</item>
+        <item>EL PENON</item>
+        <item>EL ROSAL</item>
+        <item>FACATATIVA</item>
+        <item>FOMEQUE</item>
+        <item>FOSCA</item>
+        <item>FUNZA</item>
+        <item>FUQUENE</item>
+        <item>FUSAGASUGA</item>
+        <item>GACHALA</item>
+        <item>GACHANCIPA</item>
+        <item>GACHETA</item>
+        <item>GAMA</item>
+        <item>GIRARDOT</item>
+        <item>GRANADA</item>
+        <item>GUACHETA</item>
+        <item>GUADUAS</item>
+        <item>GUASCA</item>
+        <item>GUATAQUI</item>
+        <item>GUATAVITA</item>
+        <item>GUAYABAL DE SIQUIMA</item>
+        <item>GUAYABETAL</item>
+        <item>GUTIERREZ</item>
+        <item>JERUSALEN</item>
+        <item>JUNIN</item>
+        <item>LA CALERA</item>
+        <item>LA MESA</item>
+        <item>LA PALMA</item>
+        <item>LA PENA</item>
+        <item>LA VEGA</item>
+        <item>LENGUAZAQUE</item>
+        <item>MACHETA</item>
+        <item>MADRID</item>
+        <item>MANTA</item>
+        <item>MEDINA</item>
+        <item>MOSQUERA</item>
+        <item>NARINO</item>
+        <item>NEMOCON</item>
+        <item>NILO</item>
+        <item>NIMAIMA</item>
+        <item>NOCAIMA</item>
+        <item>PACHO</item>
+        <item>PAIME</item>
+        <item>PANDI</item>
+        <item>PARATEBUENO</item>
+        <item>PASCA</item>
+        <item>PUERTO SALGAR</item>
+        <item>PULI</item>
+        <item>QUEBRADANEGRA</item>
+        <item>QUETAME</item>
+        <item>QUIPILE</item>
+        <item>RICAURTE</item>
+        <item>SAN ANTONIO DE TEQUENDAMA</item>
+        <item>SAN BERNARDO</item>
+        <item>SAN CAYETANO</item>
+        <item>SAN FRANCISCO</item>
+        <item>SAN JUAN DE RIOSECO</item>
+        <item>SASAIMA</item>
+        <item>SESQUILE</item>
+        <item>SIBATE</item>
+        <item>SILVANIA</item>
+        <item>SIMIJACA</item>
+        <item>SOACHA</item>
+        <item>SOPO</item>
+        <item>SUBACHOQUE</item>
+        <item>SUESCA</item>
+        <item>SUPATA</item>
+        <item>SUSA</item>
+        <item>SUTATAUSA</item>
+        <item>TABIO</item>
+        <item>TAUSA</item>
+        <item>TENA</item>
+        <item>TENJO</item>
+        <item>TIBACUY</item>
+        <item>TIBIRITA</item>
+        <item>TOCAIMA</item>
+        <item>TOCANCIPA</item>
+        <item>TOPAIPI</item>
+        <item>UBALA</item>
+        <item>UBAQUE</item>
+        <item>UBATE</item>
+        <item>UNE</item>
+        <item>UTICA</item>
+        <item>VENECIA</item>
+        <item>VERGARA</item>
+        <item>VIANI</item>
+        <item>VILLAGOMEZ</item>
+        <item>VILLAPINZON</item>
+        <item>VILLETA</item>
+        <item>VIOTA</item>
+        <item>YACOPI</item>
+        <item>ZIPACON</item>
+        <item>ZIPAQUIRA</item>
+    </string-array>
+
+    <string-array name="mun15">
+        <item>--</item>
+        <item>BARRANCO MINA</item>
+        <item>CACAHUAL</item>
+        <item>INIRIDA</item>
+        <item>LA GUADALUPE</item>
+        <item>MAPIRIPANA</item>
+        <item>MORICHAL</item>
+        <item>PANA-PANA</item>
+        <item>PUERTO COLOMBIA</item>
+        <item>SAN FELIPE</item>
+    </string-array>
+
+    <string-array name="mun16">
+        <item>--</item>
+        <item>ALBANIA</item>
+        <item>BARRANCAS</item>
+        <item>DIBULLA</item>
+        <item>DISTRACCION</item>
+        <item>EL MOLINO</item>
+        <item>FONSECA</item>
+        <item>HATO NUEVO</item>
+        <item>LA JAGUA DEL PILAR</item>
+        <item>MAICAO</item>
+        <item>MANAURE</item>
+        <item>RIOHACHA</item>
+        <item>SAN JUAN DEL CESAR</item>
+        <item>URIBIA</item>
+        <item>URUMITA</item>
+        <item>VILLANUEVA</item>
+    </string-array>
+
+    <string-array name="mun17">
+        <item>--</item>
+        <item>CALAMAR</item>
+        <item>EL RETORNO</item>
+        <item>MIRAFLORES</item>
+        <item>SAN JOSE DEL GUAVIARE</item>
+    </string-array>
+
+    <string-array name="mun18">
+        <item>--</item>
+        <item>ACEVEDO</item>
+        <item>AGRADO</item>
+        <item>AIPE</item>
+        <item>ALGECIRAS</item>
+        <item>ALTAMIRA</item>
+        <item>BARAYA</item>
+        <item>CAMPOALEGRE</item>
+        <item>COLOMBIA</item>
+        <item>ELIAS</item>
+        <item>GARZON</item>
+        <item>GIGANTE</item>
+        <item>GUADALUPE</item>
+        <item>HOBO</item>
+        <item>IQUIRA</item>
+        <item>ISNOS</item>
+        <item>LA ARGENTINA</item>
+        <item>LA PLATA</item>
+        <item>NATAGA</item>
+        <item>NEIVA</item>
+        <item>OPORAPA</item>
+        <item>PAICOL</item>
+        <item>PALERMO</item>
+        <item>PALESTINA</item>
+        <item>PITAL</item>
+        <item>PITALITO</item>
+        <item>RIVERA</item>
+        <item>SALADOBLANCO</item>
+        <item>SAN AGUSTIN</item>
+        <item>SANTA MARIA</item>
+        <item>SUAZA</item>
+        <item>TARQUI</item>
+        <item>TELLO</item>
+        <item>TERUEL</item>
+        <item>TESALIA</item>
+        <item>TIMANA</item>
+        <item>VILLAVIEJA</item>
+        <item>YAGUARA</item>
+    </string-array>
+
+    <string-array name="mun19">
+        <item>--</item>
+        <item>ALGARROBO</item>
+        <item>ARACATACA</item>
+        <item>ARIGUANI</item>
+        <item>CERRO DE SAN ANTONIO</item>
+        <item>CHIVOLO</item>
+        <item>CIENAGA</item>
+        <item>CONCORDIA</item>
+        <item>EL BANCO</item>
+        <item>EL PINON</item>
+        <item>EL RETEN</item>
+        <item>FUNDACION</item>
+        <item>GUAMAL</item>
+        <item>NUEVA GRANADA</item>
+        <item>PEDRAZA</item>
+        <item>PIJINO DEL CARMEN</item>
+        <item>PIVIJAY</item>
+        <item>PLATO</item>
+        <item>PUEBLOVIEJO</item>
+        <item>REMOLINO</item>
+        <item>SABANAS DE SAN ANGEL</item>
+        <item>SALAMINA</item>
+        <item>SAN SEBASTIAN DE BUENAVISTA</item>
+        <item>SAN ZENON</item>
+        <item>SANTA ANA</item>
+        <item>SANTA BARBARA DE PINTO</item>
+        <item>SANTA MARTA</item>
+        <item>SITIONUEVO</item>
+        <item>TENERIFE</item>
+        <item>ZAPAYAN</item>
+        <item>ZONA BANANERA</item>
+    </string-array>
+
+    <string-array name="mun20">
+        <item>--</item>
+        <item>ACACIAS</item>
+        <item>BARRANCA DE UPIA</item>
+        <item>CABUYARO</item>
+        <item>CASTILLA LA NUEVA</item>
+        <item>CUBARRAL</item>
+        <item>CUMARAL</item>
+        <item>EL CALVARIO</item>
+        <item>EL CASTILLO</item>
+        <item>EL DORADO</item>
+        <item>FUENTE DE ORO</item>
+        <item>GRANADA</item>
+        <item>GUAMAL</item>
+        <item>LA MACARENA</item>
+        <item>LEJANIAS</item>
+        <item>MAPIRIPAN</item>
+        <item>MESETAS</item>
+        <item>PUERTO CONCORDIA</item>
+        <item>PUERTO GAITAN</item>
+        <item>PUERTO LLERAS</item>
+        <item>PUERTO LOPEZ</item>
+        <item>PUERTO RICO</item>
+        <item>RESTREPO</item>
+        <item>SAN CARLOS DE GUAROA</item>
+        <item>SAN JUAN DE ARAMA</item>
+        <item>SAN JUANITO</item>
+        <item>SAN MARTIN</item>
+        <item>URIBE</item>
+        <item>VILLAVICENCIO</item>
+        <item>VISTAHERMOSA</item>
+    </string-array>
+
+    <string-array name="mun21">
+        <item>--</item>
+        <item>ABREGO</item>
+        <item>ARBOLEDAS</item>
+        <item>BOCHALEMA</item>
+        <item>BUCARASICA</item>
+        <item>CACHIRA</item>
+        <item>CACOTA</item>
+        <item>CHINACOTA</item>
+        <item>CHITAGA</item>
+        <item>CONVENCION</item>
+        <item>CUCUTA</item>
+        <item>CUCUTILLA</item>
+        <item>DURANIA</item>
+        <item>EL CARMEN</item>
+        <item>EL TARRA</item>
+        <item>EL ZULIA</item>
+        <item>GRAMALOTE</item>
+        <item>HACARI</item>
+        <item>HERRAN</item>
+        <item>LA ESPERANZA</item>
+        <item>LA PLAYA</item>
+        <item>LABATECA</item>
+        <item>LOS PATIOS</item>
+        <item>LOURDES</item>
+        <item>MUTISCUA</item>
+        <item>OCANA</item>
+        <item>PAMPLONA</item>
+        <item>PAMPLONITA</item>
+        <item>PUERTO SANTANDER</item>
+        <item>RAGONVALIA</item>
+        <item>SALAZAR</item>
+        <item>SAN CALIXTO</item>
+        <item>SAN CAYETANO</item>
+        <item>SANTIAGO</item>
+        <item>SARDINATA</item>
+        <item>SILOS</item>
+        <item>TEORAMA</item>
+        <item>TIBU</item>
+        <item>TOLEDO</item>
+        <item>VILLA CARO</item>
+        <item>VILLA DEL ROSARIO</item>
+    </string-array>
+
+    <string-array name="mun22">
+        <item>--</item>
+        <item>ALBAN</item>
+        <item>ALDANA</item>
+        <item>ANCUYA</item>
+        <item>ARBOLEDA</item>
+        <item>BARBACOAS</item>
+        <item>BELEN</item>
+        <item>BUESACO</item>
+        <item>CHACHAGUI</item>
+        <item>COLON (GEnova)</item>
+        <item>CONSACA</item>
+        <item>CONTADERO</item>
+        <item>CORDOBA</item>
+        <item>CUASPUD</item>
+        <item>CUMBAL</item>
+        <item>CUMBITARA</item>
+        <item>EL CHARCO</item>
+        <item>EL PENOL</item>
+        <item>EL ROSARIO</item>
+        <item>EL TABLON</item>
+        <item>EL TAMBO</item>
+        <item>FRANCISCO PIZARRO</item>
+        <item>FUNES</item>
+        <item>GUACHUCAL</item>
+        <item>GUAITARILLA</item>
+        <item>GUALMATAN</item>
+        <item>ILES</item>
+        <item>IMUES</item>
+        <item>IPIALES</item>
+        <item>LA CRUZ</item>
+        <item>LA FLORIDA</item>
+        <item>LA LLANADA</item>
+        <item>LA TOLA</item>
+        <item>LA UNION</item>
+        <item>LEIVA</item>
+        <item>LINARES</item>
+        <item>LOS ANDES</item>
+        <item>MAGÜI</item>
+        <item>MALLAMA</item>
+        <item>MOSQUERA</item>
+        <item>NARINO</item>
+        <item>OLAYA HERRERA</item>
+        <item>OSPINA</item>
+        <item>PASTO</item>
+        <item>POLICARPA</item>
+        <item>POTOSI</item>
+        <item>PROVIDENCIA</item>
+        <item>PUERRES</item>
+        <item>PUPIALES</item>
+        <item>RICAURTE</item>
+        <item>ROBERTO PAYAN</item>
+        <item>SAMANIEGO</item>
+        <item>SAN BERNARDO</item>
+        <item>SAN LORENZO</item>
+        <item>SAN PABLO</item>
+        <item>SAN PEDRO DE CARTAGO</item>
+        <item>SANDONA</item>
+        <item>SANTA BARBARA</item>
+        <item>SANTA CRUZ</item>
+        <item>SAPUYES</item>
+        <item>TAMINANGO</item>
+        <item>TANGUA</item>
+        <item>TUMACO</item>
+        <item>TUQUERRES</item>
+        <item>YACUANQUER</item>
+    </string-array>
+
+    <string-array name="mun23">
+        <item>--</item>
+        <item>COLON</item>
+        <item>MOCOA</item>
+        <item>ORITO</item>
+        <item>PUERTO ASIS</item>
+        <item>PUERTO CAICEDO</item>
+        <item>PUERTO GUZMAN</item>
+        <item>PUERTO LEGUIZAMO</item>
+        <item>SAN FRANCISCO</item>
+        <item>SAN MIGUEL</item>
+        <item>SANTIAGO</item>
+        <item>SIBUNDOY</item>
+        <item>VALLE DEL GUAMUEZ</item>
+        <item>VILLAGARZON</item>
+    </string-array>
+
+    <string-array name="mun24">
+        <item>--</item>
+        <item>ARMENIA</item>
+        <item>BUENAVISTA</item>
+        <item>CALARCA</item>
+        <item>CIRCASIA</item>
+        <item>CORDOBA</item>
+        <item>FILANDIA</item>
+        <item>GENOVA</item>
+        <item>LA TEBAIDA</item>
+        <item>MONTENEGRO</item>
+        <item>PIJAO</item>
+        <item>QUIMBAYA</item>
+        <item>SALENTO</item>
+    </string-array>
+
+    <string-array name="mun25">
+        <item>--</item>
+        <item>APIA</item>
+        <item>BALBOA</item>
+        <item>BELEN DE UMBRIA</item>
+        <item>DOSQUEBRADAS</item>
+        <item>GUATICA</item>
+        <item>LA CELIA</item>
+        <item>LA VIRGINIA</item>
+        <item>MARSELLA</item>
+        <item>MISTRATO</item>
+        <item>PEREIRA</item>
+        <item>PUEBLO RICO</item>
+        <item>QUINCHIA</item>
+        <item>SANTA ROSA DE CABAL</item>
+        <item>SANTUARIO</item>
+    </string-array>
+
+    <string-array name="mun26">
+        <item>--</item>
+        <item>PROVIDENCIA Y SANTA CATALINA</item>
+        <item>SAN ANDRES</item>
+    </string-array>
+
+    <string-array name="mun27">
+        <item>--</item>
+        <item>AGUADA</item>
+        <item>ALBANIA</item>
+        <item>ARATOCA</item>
+        <item>BARBOSA</item>
+        <item>BARICHARA</item>
+        <item>BARRANCABERMEJA</item>
+        <item>BETULIA</item>
+        <item>BOLIVAR</item>
+        <item>BUCARAMANGA</item>
+        <item>CABRERA</item>
+        <item>CALIFORNIA</item>
+        <item>CAPITANEJO</item>
+        <item>CARCASI</item>
+        <item>CEPITA</item>
+        <item>CERRITO</item>
+        <item>CHARALA</item>
+        <item>CHARTA</item>
+        <item>CHIMA</item>
+        <item>CHIPATA</item>
+        <item>CIMITARRA</item>
+        <item>CONCEPCION</item>
+        <item>CONFINES</item>
+        <item>CONTRATACION</item>
+        <item>COROMORO</item>
+        <item>CURITI</item>
+        <item>EL CARMEN</item>
+        <item>EL GUACAMAYO</item>
+        <item>EL PENON</item>
+        <item>EL PLAYON</item>
+        <item>ENCINO</item>
+        <item>ENCISO</item>
+        <item>FLORIAN</item>
+        <item>FLORIDABLANCA</item>
+        <item>GALAN</item>
+        <item>GAMBITA</item>
+        <item>GIRON</item>
+        <item>GUACA</item>
+        <item>GUADALUPE</item>
+        <item>GUAPOTA</item>
+        <item>GUAVATA</item>
+        <item>GÜEPSA</item>
+        <item>HATO</item>
+        <item>JESUS MARIA</item>
+        <item>JORDAN</item>
+        <item>LA BELLEZA</item>
+        <item>LA PAZ</item>
+        <item>LANDAZURI</item>
+        <item>LEBRIJA</item>
+        <item>LOS SANTOS</item>
+        <item>MACARAVITA</item>
+        <item>MALAGA</item>
+        <item>MATANZA</item>
+        <item>MOGOTES</item>
+        <item>MOLAGAVITA</item>
+        <item>OCAMONTE</item>
+        <item>OIBA</item>
+        <item>ONZAGA</item>
+        <item>PALMAR</item>
+        <item>PALMAS DEL SOCORRO</item>
+        <item>PARAMO</item>
+        <item>PIEDECUESTA</item>
+        <item>PINCHOTE</item>
+        <item>PUENTE NACIONAL</item>
+        <item>PUERTO PARRA</item>
+        <item>PUERTO WILCHES</item>
+        <item>RIONEGRO</item>
+        <item>SABANA DE TORRES</item>
+        <item>SAN ANDRES</item>
+        <item>SAN BENITO</item>
+        <item>SAN GIL</item>
+        <item>SAN JOAQUIN</item>
+        <item>SAN JOSE DE MIRANDA</item>
+        <item>SAN MIGUEL</item>
+        <item>SAN VICENTE DE CHUCURI</item>
+        <item>SANTA BARBARA</item>
+        <item>SANTA HELENA DEL OPON</item>
+        <item>SIMACOTA</item>
+        <item>SOCORRO</item>
+        <item>SUAITA</item>
+        <item>SUCRE</item>
+        <item>SURATA</item>
+        <item>TONA</item>
+        <item>VALLE DE SAN JOSE</item>
+        <item>VELEZ</item>
+        <item>VETAS</item>
+        <item>VILLANUEVA</item>
+        <item>ZAPATOCA</item>
+    </string-array>
+
+    <string-array name="mun28">
+        <item>--</item>
+        <item>BUENAVISTA</item>
+        <item>CAIMITO</item>
+        <item>CHALAN</item>
+        <item>COLOSO</item>
+        <item>COROZAL</item>
+        <item>COVENAS</item>
+        <item>EL ROBLE</item>
+        <item>GALERAS</item>
+        <item>GUARANDA</item>
+        <item>LA UNION</item>
+        <item>LOS PALMITOS</item>
+        <item>MAJAGUAL</item>
+        <item>MORROA</item>
+        <item>OVEJAS</item>
+        <item>PALMITO</item>
+        <item>SAMPUES</item>
+        <item>SAN BENITO ABAD</item>
+        <item>SAN JUAN DE BETULIA</item>
+        <item>SAN MARCOS</item>
+        <item>SAN ONOFRE</item>
+        <item>SAN PEDRO</item>
+        <item>SINCE</item>
+        <item>SINCELEJO</item>
+        <item>SUCRE</item>
+        <item>TOLU</item>
+        <item>TOLUVIEJO</item>
+    </string-array>
+
+    <string-array name="mun29">
+        <item>--</item>
+        <item>ALPUJARRA</item>
+        <item>ALVARADO</item>
+        <item>AMBALEMA</item>
+        <item>ANZOATEGUI</item>
+        <item>ARMERO</item>
+        <item>ATACO</item>
+        <item>CAJAMARCA</item>
+        <item>CARMEN DE APICALA</item>
+        <item>CASABIANCA</item>
+        <item>CHAPARRAL</item>
+        <item>COELLO</item>
+        <item>COYAIMA</item>
+        <item>CUNDAY</item>
+        <item>DOLORES</item>
+        <item>ESPINAL</item>
+        <item>FALAN</item>
+        <item>FLANDES</item>
+        <item>FRESNO</item>
+        <item>GUAMO</item>
+        <item>HERVEO</item>
+        <item>HONDA</item>
+        <item>IBAGUE</item>
+        <item>ICONONZO</item>
+        <item>LERIDA</item>
+        <item>LIBANO</item>
+        <item>MARIQUITA</item>
+        <item>MELGAR</item>
+        <item>MURILLO</item>
+        <item>NATAGAIMA</item>
+        <item>ORTEGA</item>
+        <item>PALOCABILDO</item>
+        <item>PIEDRAS</item>
+        <item>PLANADAS</item>
+        <item>PRADO</item>
+        <item>PURIFICACION</item>
+        <item>RIOBLANCO</item>
+        <item>RONCESVALLES</item>
+        <item>ROVIRA</item>
+        <item>SALDANA</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN LUIS</item>
+        <item>SANTA ISABEL</item>
+        <item>SUAREZ</item>
+        <item>VALLE DE SAN JUAN</item>
+        <item>VENADILLO</item>
+        <item>VILLAHERMOSA</item>
+        <item>VILLARRICA</item>
+    </string-array>
+
+    <string-array name="mun30">
+        <item>--</item>
+        <item>ALCALA</item>
+        <item>ANDALUCIA</item>
+        <item>ANSERMANUEVO</item>
+        <item>ARGELIA</item>
+        <item>BOLIVAR</item>
+        <item>BUENAVENTURA</item>
+        <item>BUGA</item>
+        <item>BUGALAGRANDE</item>
+        <item>CAICEDONIA</item>
+        <item>CALI</item>
+        <item>CALIMA</item>
+        <item>CANDELARIA</item>
+        <item>CARTAGO</item>
+        <item>DAGUA</item>
+        <item>EL AGUILA</item>
+        <item>EL CAIRO</item>
+        <item>EL CERRITO</item>
+        <item>EL DOVIO</item>
+        <item>FLORIDA</item>
+        <item>GINEBRA</item>
+        <item>GUACARI</item>
+        <item>JAMUNDI</item>
+        <item>LA CUMBRE</item>
+        <item>LA UNION</item>
+        <item>LA VICTORIA</item>
+        <item>OBANDO</item>
+        <item>PALMIRA</item>
+        <item>PRADERA</item>
+        <item>RESTREPO</item>
+        <item>RIOFRIO</item>
+        <item>ROLDANILLO</item>
+        <item>SAN PEDRO</item>
+        <item>SEVILLA</item>
+        <item>TORO</item>
+        <item>TRUJILLO</item>
+        <item>TULUA</item>
+        <item>ULLOA</item>
+        <item>VERSALLES</item>
+        <item>VIJES</item>
+        <item>YOTOCO</item>
+        <item>YUMBO</item>
+        <item>ZARZAL</item>
+    </string-array>
+
+    <string-array name="mun31">
+        <item>--</item>
+        <item>CARURU</item>
+        <item>MITU</item>
+        <item>PACOA</item>
+        <item>PAPUNAUA</item>
+        <item>TARAIRA</item>
+        <item>YAVARATE</item>
+    </string-array>
+
+    <string-array name="mun32">
+        <item>--</item>
+        <item>CUMARIBO</item>
+        <item>LA PRIMAVERA</item>
+        <item>PUERTO CARRENO</item>
+        <item>SANTA ROSALIA</item>
+    </string-array>
+
+
+    <string name="title_med_list">Meds</string>
+    <string name="title_med_detail">Med Detail</string>
+    <string name="title_medico_list">medicos</string>
+    <string name="title_medico_detail">medico Detail</string>
+    <string name="title_doctor_list">Doctors</string>
+    <string name="title_doctor_detail">Doctor Detail</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--   ARRAYS REGISTRO Medicamentos-->
+
+    <string-array name="nombre_med">
+        <item>Alprazolam 0,25 mg</item>
+        <item>Alprazolam 0,5 mg</item>
+        <item>Alprazolam 0,75 mg/mL</item>
+        <item>Alprazolam 1 mg</item>
+        <item>Alprazolam 1 mg/mL</item>
+        <item>Bromazepam 3 mg</item>
+        <item>Bromazepam 6 mg</item>
+        <item>Buprenorfina 5 mg</item>
+        <item>Buprenorfina 10 mg</item>
+        <item>Buprenorfina 20 mg</item>
+        <item>Buprenorfina 30 mg</item>
+        <item>Buprenorfina 40 mg</item>
+        <item>Clobazam 10 mg</item>
+        <item>Clobazam 20 mg</item>
+        <item>Clonazepam 0,5 mg</item>
+        <item>Clonazepam 2 mg</item>
+        <item>Clonazepam 1 mg/mL</item>
+        <item>Clonazepam 2,5 mg/mL</item>
+        <item>Clozapina 25 mg</item>
+        <item>Clozapina 100 mg</item>
+        <item>Diazepam 10 mg</item>
+        <item>Diazepam 10 mg/2 mL</item>
+        <item>Dinoprostona 10 mg</item>
+        <item>Efedrina Sulfato 60 mg/mL</item>
+        <item>Fentanilo 1,375 mg</item>
+        <item>Fentanilo 2,1 mg</item>
+        <item>Fentanilo 2,75 mg</item>
+        <item>Fentanilo 4,2 mg</item>
+        <item>Fentanilo 4,8 mg</item>
+        <item>Fentanilo 5,5 mg</item>
+        <item>Fentanilo 8,25 mg</item>
+        <item>Fentanilo 8,4 mg</item>
+        <item>Fentanilo 9,6 mg</item>
+        <item>Fentanilo 11 mg</item>
+        <item>Fentanilo 12,6 mg</item>
+        <item>Fentanilo 14,4 mg</item>
+        <item>Fentanilo 16,8 mg</item>
+        <item>Fentanilo 19,2 mg</item>
+        <item>Fentanilo, Fentanilo Citrato 50 mcg</item>
+        <item>Fentanilo, Fentanilo Citrato 100 mcg</item>
+        <item>Fentanilo, Fentanilo Citrato 200 mcg</item>
+        <item>Fentanilo Citrato 0,1 mg/2 mL</item>
+        <item>Fentanilo Citrato 0,25 mg/5 mL</item>
+        <item>Fentanilo Citrato 0,5 mg/10 mL</item>
+        <item>Ketamina Clorhidrato 500 mg/10 mL</item>
+        <item>Lorazepam 1 mg</item>
+        <item>Lorazepam 2 mg</item>
+        <item>Metilergometrina Maleato 0,125 mg</item>
+        <item>Metilergometrina Maleato 0,2 mg/mL</item>
+        <item>Midazolam, Midazolam Clorhidrato 5 mg/mL</item>
+        <item>Midazolam, Midazolam Clorhidrato 5 mg/5 mL</item>
+        <item>Midazolam, Midazolam Clorhidrato 15 mg/3 mL</item>
+        <item>Midazolam, Midazolam Clorhidrato 50 mg/10 mL</item>
+        <item>Midazolam, Midazolam Clorhidrato 200 mg/100 mL</item>
+        <item>Midazolam Maleato 7,5 mg</item>
+        <item>Oxicodona Clorhidrato 5 mg</item>
+        <item>Oxicodona Clorhidrato 10 mg</item>
+        <item>Oxicodona Clorhidrato 15 mg</item>
+        <item>Oxicodona Clorhidrato 20 mg</item>
+        <item>Oxicodona Clorhidrato 30 mg</item>
+        <item>Oxicodona Clorhidrato 40 mg</item>
+        <item>Oxicodona Clorhidrato 60 mg</item>
+        <item>Oxicodona Clorhidrato 80 mg</item>
+        <item>Oxicodona Clorhidrato 10 mg/mL</item>
+        <item>Oxicodona Clorhidrato 0,1 g/100 mL</item>
+        <item>Oxicodona Clorhidrato 1 g/100 mL</item>
+        <item>Oxitocina 5 UI/mL</item>
+        <item>Oxitocina 10 UI/mL</item>
+        <item>Remifentanilo Clorhidrato 1 mg</item>
+        <item>Remifentanilo Clorhidrato 2 mg</item>
+        <item>Remifentanilo Clorhidrato 5 mg</item>
+        <item>Tapentadol, Tapentadol Clorhidrato 25 mg</item>
+        <item>Tapentadol, Tapentadol Clorhidrato 50 mg</item>
+        <item>Tapentadol, Tapentadol Clorhidrato 75 mg</item>
+        <item>Tapentadol, Tapentadol Clorhidrato 100 mg</item>
+        <item>Tapentadol, Tapentadol Clorhidrato 150 mg</item>
+        <item>Tapentadol, Tapentadol Clorhidrato 200 mg</item>
+        <item>Tapentadol, Tapentadol Clorhidrato 250 mg</item>
+        <item>Tiopental Sódico 1 g</item>
+        <item>Triazolam 0,25 mg</item>
+        <item>Zolpidem Tartrato, Hemitartrato 5 mg</item>
+        <item>Zolpidem Tartrato, Hemitartrato 6,25 mg</item>
+        <item>Zolpidem Tartrato, Hemitartrato 10 mg</item>
+        <item>Zolpidem Tartrato, Hemitartrato 12,5 mg</item>
+        <item>Fenobarbital 0,4 g/100 mL (0,4 %)</item>
+        <item>Fenobarbital 10 mg</item>
+        <item>Fenobarbital 50 mg</item>
+        <item>Fenobarbital 100 mg</item>
+        <item>Fenobarbital Sódico 40 mg/mL</item>
+        <item>Fenobarbital Sódico 200 mg/mL</item>
+        <item>Hidrato de Cloral 10 g/100 mL (10%)</item>
+        <item>Hidromorfona Clorhidrato 2,5 mg</item>
+        <item>Hidromorfona Clorhidrato 5 mg</item>
+        <item>Hidromorfona Clorhidrato 2 mg/mL</item>
+        <item>Meperidina Clorhidrato 100 mg/2 mL</item>
+        <item>Metadona Clorhidrato 10 mg</item>
+        <item>Metadona Clorhidrato 40 mg</item>
+        <item>Metilfenidato Clorhidrato 10 mg</item>
+        <item>Metilfenidato Clorhidrato 18 mg</item>
+        <item>Metilfenidato Clorhidrato 20 mg</item>
+        <item>Metilfenidato Clorhidrato 30 mg</item>
+        <item>Metilfenidato Clorhidrato 36 mg</item>
+        <item>Metilfenidato Clorhidrato 54 mg</item>
+        <item>Morfina Clorhidrato 10 mg/mL</item>
+        <item>Morfina Clorhidrato 30 mg/mL</item>
+        <item>Morfina Clorhidrato 3 g/ 100 mL (3%)</item>
+        <item>Primidona 250 mg</item>
+    </string-array>
+
+    <string-array name="advertencias_med">
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Alprazolam 0,25 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Alprazolam 0,5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Alprazolam 0,75 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Alprazolam 1 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Alprazolam 1 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Bromazepam 3 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Bromazepam 6 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Buprenorfina 5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Buprenorfina 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Buprenorfina 20 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Buprenorfina 30 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Buprenorfina 40 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clobazam 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clobazam 20 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clonazepam 0,5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clonazepam 2 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clonazepam 1 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clonazepam 2,5 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clozapina 25 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Clozapina 100 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Diazepam 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Diazepam 10 mg/2 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Dinoprostona 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Efedrina Sulfato 60 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 1,375 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 2,1 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 2,75 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 4,2 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 4,8 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 5,5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 8,25 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 8,4 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 9,6 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 11 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 12,6 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 14,4 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 16,8 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo 19,2 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo, Fentanilo Citrato 50 mcg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo, Fentanilo Citrato 100 mcg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo, Fentanilo Citrato 200 mcg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo Citrato 0,1 mg/2 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo Citrato 0,25 mg/5 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fentanilo Citrato 0,5 mg/10 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Ketamina Clorhidrato 500 mg/10 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Lorazepam 1 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Lorazepam 2 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilergometrina Maleato 0,125 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilergometrina Maleato 0,2 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Midazolam, Midazolam Clorhidrato 5 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Midazolam, Midazolam Clorhidrato 5 mg/5 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Midazolam, Midazolam Clorhidrato 15 mg/3 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Midazolam, Midazolam Clorhidrato 50 mg/10 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Midazolam, Midazolam Clorhidrato 200 mg/100 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Midazolam Maleato 7,5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 15 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 20 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 30 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 40 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 60 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 80 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 10 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 0,1 g/100 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxicodona Clorhidrato 1 g/100 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxitocina 5 UI/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Oxitocina 10 UI/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Remifentanilo Clorhidrato 1 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Remifentanilo Clorhidrato 2 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Remifentanilo Clorhidrato 5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tapentadol, Tapentadol Clorhidrato 25 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tapentadol, Tapentadol Clorhidrato 50 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tapentadol, Tapentadol Clorhidrato 75 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tapentadol, Tapentadol Clorhidrato 100 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tapentadol, Tapentadol Clorhidrato 150 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tapentadol, Tapentadol Clorhidrato 200 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tapentadol, Tapentadol Clorhidrato 250 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Tiopental Sódico 1 g \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Triazolam 0,25 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Zolpidem Tartrato, Hemitartrato 5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Zolpidem Tartrato, Hemitartrato 6,25 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Zolpidem Tartrato, Hemitartrato 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Zolpidem Tartrato, Hemitartrato 12,5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fenobarbital 0,4 g/100 mL (0,4 %) \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fenobarbital 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fenobarbital 50 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fenobarbital 100 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fenobarbital Sódico 40 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Fenobarbital Sódico 200 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Hidrato de Cloral 10 g/100 mL (10%) \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Hidromorfona Clorhidrato 2,5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Hidromorfona Clorhidrato 5 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Hidromorfona Clorhidrato 2 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Meperidina Clorhidrato 100 mg/2 mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metadona Clorhidrato 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metadona Clorhidrato 40 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilfenidato Clorhidrato 10 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilfenidato Clorhidrato 18 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilfenidato Clorhidrato 20 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilfenidato Clorhidrato 30 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilfenidato Clorhidrato 36 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Metilfenidato Clorhidrato 54 mg \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Morfina Clorhidrato 10 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Morfina Clorhidrato 30 mg/mL \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Morfina Clorhidrato 3 g/ 100 mL (3%) \n</item>
+        <item>\n Adevertencias/Contraindicaciones por establecer para el medicamento: Primidona 250 mg \n</item>
+    </string-array>
+
+    <string-array name="usos_med">
+        <item> \n  El modo de uso del medicamento  Alprazolam 0,25 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Alprazolam 0,5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Alprazolam 0,75 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Alprazolam 1 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Alprazolam 1 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Bromazepam 3 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Bromazepam 6 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Buprenorfina 5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Buprenorfina 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Buprenorfina 20 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Buprenorfina 30 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Buprenorfina 40 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clobazam 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clobazam 20 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clonazepam 0,5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clonazepam 2 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clonazepam 1 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clonazepam 2,5 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clozapina 25 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Clozapina 100 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Diazepam 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Diazepam 10 mg/2 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Dinoprostona 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Efedrina Sulfato 60 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 1,375 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 2,1 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 2,75 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 4,2 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 4,8 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 5,5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 8,25 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 8,4 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 9,6 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 11 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 12,6 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 14,4 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 16,8 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo 19,2 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo, Fentanilo Citrato 50 mcg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo, Fentanilo Citrato 100 mcg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo, Fentanilo Citrato 200 mcg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo Citrato 0,1 mg/2 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo Citrato 0,25 mg/5 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fentanilo Citrato 0,5 mg/10 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Ketamina Clorhidrato 500 mg/10 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Lorazepam 1 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Lorazepam 2 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilergometrina Maleato 0,125 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilergometrina Maleato 0,2 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Midazolam, Midazolam Clorhidrato 5 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Midazolam, Midazolam Clorhidrato 5 mg/5 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Midazolam, Midazolam Clorhidrato 15 mg/3 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Midazolam, Midazolam Clorhidrato 50 mg/10 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Midazolam, Midazolam Clorhidrato 200 mg/100 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Midazolam Maleato 7,5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 15 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 20 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 30 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 40 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 60 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 80 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 10 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 0,1 g/100 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxicodona Clorhidrato 1 g/100 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxitocina 5 UI/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Oxitocina 10 UI/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Remifentanilo Clorhidrato 1 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Remifentanilo Clorhidrato 2 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Remifentanilo Clorhidrato 5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tapentadol, Tapentadol Clorhidrato 25 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tapentadol, Tapentadol Clorhidrato 50 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tapentadol, Tapentadol Clorhidrato 75 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tapentadol, Tapentadol Clorhidrato 100 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tapentadol, Tapentadol Clorhidrato 150 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tapentadol, Tapentadol Clorhidrato 200 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tapentadol, Tapentadol Clorhidrato 250 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Tiopental Sódico 1 g falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Triazolam 0,25 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Zolpidem Tartrato, Hemitartrato 5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Zolpidem Tartrato, Hemitartrato 6,25 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Zolpidem Tartrato, Hemitartrato 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Zolpidem Tartrato, Hemitartrato 12,5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fenobarbital 0,4 g/100 mL (0,4 %) falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fenobarbital 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fenobarbital 50 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fenobarbital 100 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fenobarbital Sódico 40 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Fenobarbital Sódico 200 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Hidrato de Cloral 10 g/100 mL (10%) falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Hidromorfona Clorhidrato 2,5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Hidromorfona Clorhidrato 5 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Hidromorfona Clorhidrato 2 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Meperidina Clorhidrato 100 mg/2 mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metadona Clorhidrato 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metadona Clorhidrato 40 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilfenidato Clorhidrato 10 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilfenidato Clorhidrato 18 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilfenidato Clorhidrato 20 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilfenidato Clorhidrato 30 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilfenidato Clorhidrato 36 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Metilfenidato Clorhidrato 54 mg falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Morfina Clorhidrato 10 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Morfina Clorhidrato 30 mg/mL falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Morfina Clorhidrato 3 g/ 100 mL (3%) falta por establecer \n  </item>
+        <item> \n  El modo de uso del medicamento  Primidona 250 mg falta por establecer \n  </item>
+    </string-array>
+
+    <string-array name="viadmin_med">
+        <item>--</item>
+        <item>Oral</item>
+        <item>Rectal</item>
+        <item>Vaginal</item>
+        <item>Parenteral</item>
+        <item>Ótica</item>
+        <item>Oftálmica</item>
+        <item>Dérmica</item>
+        <item>Transdérmica</item>
+        <item>Subcutanea</item>
+    </string-array>
+
+    <string-array name="vacio">
+        <item>--</item>
+        <item>--</item>
+    </string-array>
+
+    <string-array name="terapias_opciones">
+        <item>--</item>
+        <item>Terapista Físico</item>
+        <item>Terapista Respiratorio</item>
+        <item>Terapista Ocupacional</item>
+        <item>Terapista Fonoaudiológica</item>
+    </string-array>
+
+    <string-array name="terapias_tipoatencion">
+        <item>--</item>
+        <item>Sesión simple de Terapia</item>
+        <item>Sesión final con entrenamiento</item>
+    </string-array>
+
+
+
 </resources>

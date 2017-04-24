@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.appdemo.mi_salud.misaludplus_pacientes.MainActivity"
+    android:orientation="vertical">
+
+    <!-- LOGO Y NOMBRE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_weight="1"
+            android:id="@+id/imageView"
+            android:contentDescription="@string/app_name"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/slogan"
+            android:layout_weight="2"
+            android:contentDescription="@string/app_name"
+            />
+    </LinearLayout>
+
+    <!-- BOTONES -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/btnMed"
+                    style="@style/imgs_0"
+                    android:background="@drawable/img_btn"
+                    android:elevation="6dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mismedicos"
+                    android:contentDescription="@string/tittle_med"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitt_med"
+                    android:gravity="center"
+                    style="@style/txtSub2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/btnSos"
+                    style="@style/imgs_0"
+                    android:background="@drawable/img_btn"
+                    android:elevation="6dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/misurgencias"
+                    android:contentDescription="@string/tittle_urg"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitt_urg"
+                    android:gravity="center"
+                    style="@style/txtSub2"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/btnPast"
+                    style="@style/imgs_0"
+                    android:background="@drawable/img_btn"
+                    android:elevation="6dp"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mismedicamentos"
+                    android:contentDescription="@string/tittle_pas"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitt_pas"
+                    android:gravity="center"
+                    style="@style/txtSub2"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    style="@style/imgs_0"
+                    android:id="@+id/btnLab"
+                    android:src="@drawable/mislaboratorios"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/img_btn"
+                    android:contentDescription="@string/tittle_lab"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitt_lab"
+                    android:gravity="center"
+                    style="@style/txtSub2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    style="@style/imgs_0"
+                    android:id="@+id/btnAmb"
+                    android:src="@drawable/misodontologos"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/img_btn"
+                    android:contentDescription="@string/tittle_odn"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitt_odn"
+                    android:gravity="center"
+                    style="@style/txtSub2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                >
+                <ImageButton
+                    style="@style/imgs_0"
+                    android:id="@+id/btnTer"
+                    android:src="@drawable/misterapias"
+                    android:scaleType="fitCenter"
+                    android:padding="5dp"
+                    android:elevation="6dp"
+                    android:background="@drawable/img_btn"
+                    android:contentDescription="@string/tittle_ter"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subtitt_ter"
+                    android:gravity="center"
+                    style="@style/txtSub2"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:baselineAligned="false"
+            >
+            <ImageButton
+                style="@style/imgs1"
+                android:id="@+id/btnOth"
+                android:src="@drawable/otros"
+                android:scaleType="fitCenter"
+                android:padding="5dp"
+                android:contentDescription="@string/tittle_oth"
+                android:elevation="6dp"
+                android:background="@drawable/img_btn"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tittle_oth"
+                android:gravity="center"
+                style="@style/txtSub2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡¡Avisos!!"
+        android:gravity="center"
+        style="@style/txtSub4"/>
+
+    <RelativeLayout
+        android:id="@+id/idNws"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+</LinearLayout>

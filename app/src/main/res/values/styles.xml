@@ -3,9 +3,254 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/winter1</item>
+        <item name="colorPrimaryDark">@color/winter2</item>
+        <item name="colorAccent">@color/winter3</item>
     </style>
+
+    <style name="txtTittle">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="txtSub">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="txtSub0">
+        <item name="android:textColor">@color/winter5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="txtSub1">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="txtSub2">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="txtSub3">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/round_txt2</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="txtSub4">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/winter5</item>
+    </style>
+
+    <style name="txtBoxAC">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/round_txt2</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:digits">@string/digitos2</item>
+    </style>
+
+    <style name="txtBoxS">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/round_txt3</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="txtBox">
+        <item name="android:textColor">@color/winter4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="txtBox2">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/winter4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="txtBox3">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/winter4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="txtBox4">
+        <item name="android:textColor">@color/winter4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:autoText">true</item>
+    </style>
+
+    <style name="txtBox5">
+        <item name="android:textColor">@color/winter5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="txtBoxAuto">
+        <item name="android:textColor">@color/winter4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:inputType">textAutoComplete</item>
+    </style>
+
+    <style name="btnBox">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="txtBoxNum">
+        <item name="android:textColor">@color/winter4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:inputType">number</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="txtBoxEmail">
+        <item name="android:textColor">@color/winter4</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="spinBox">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/round_spin</item>
+
+    </style>
+
+    <style name="spinBox2">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/round_spin</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginRight">10sp</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+
+    </style>
+
+    <style name="spinBox3">
+        <item name="android:textColor">@color/winter3</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/round_spin</item>
+
+    </style>
+
+
+    <style name="imgs">
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_height">70sp</item>
+        <item name="android:layout_width">70sp</item>
+    </style>
+
+    <style name="imgs_0">
+        <item name="android:layout_marginBottom">3sp</item>
+        <item name="android:layout_marginTop">3sp</item>
+        <item name="android:layout_marginLeft">3sp</item>
+        <item name="android:layout_marginRight">3sp</item>
+        <item name="android:layout_height">60sp</item>
+        <item name="android:layout_width">60sp</item>
+    </style>
+
+    <style name="imgs0">
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_height">55sp</item>
+        <item name="android:layout_width">55sp</item>
+    </style>
+
+    <style name="imgs1">
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_height">45sp</item>
+        <item name="android:layout_width">45sp</item>
+    </style>
+
+    <style name="imgs2">
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_height">30sp</item>
+        <item name="android:layout_width">30sp</item>
+
+    </style>
+
+    <style name="imgsl">
+        <item name="android:layout_marginBottom">5sp</item>
+        <item name="android:layout_marginTop">5sp</item>
+        <item name="android:layout_marginLeft">5sp</item>
+        <item name="android:layout_marginRight">5sp</item>
+        <item name="android:layout_height">55sp</item>
+        <item name="android:layout_width">150sp</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 </resources>
