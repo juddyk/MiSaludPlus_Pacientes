@@ -81,6 +81,8 @@ public class registroPaciente extends AppCompatActivity implements DialogCalenda
         anio = calendar.get(Calendar.YEAR);
         //Se inicializa Paciente
         pacnt.setFnAnio(String.valueOf(anio+1));
+        pacnt.setFnMes(String.valueOf(0));
+        pacnt.setFnDia(String.valueOf(0));
 
         //SE INSTANCIAN LOS OBJETOS DE LA INTERFAZ
         v2= (LinearLayout) findViewById(R.id.vistaFecha);
