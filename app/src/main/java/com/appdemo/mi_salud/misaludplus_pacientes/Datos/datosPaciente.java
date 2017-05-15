@@ -1,6 +1,6 @@
 package com.appdemo.mi_salud.misaludplus_pacientes.Datos;
 
-/**
+/*
  *  Clase para los datos de los Pacientes
  */
 
@@ -9,9 +9,9 @@ public class datosPaciente {
     private String nombre2;
     private String apellido1;
     private String apellido2;
-    private int fnDia;
-    private int fnMes;
-    private int fnAnio;
+    private String fnDia;
+    private String fnMes;
+    private String fnAnio;
     private String tpDoc;
     private String numDoc;
     private String ocupacion;
@@ -19,7 +19,7 @@ public class datosPaciente {
     private String stsCivil;
     private String departamento;
     private String municipio;
-    private int estrato;
+    private String estrato;
     private String direccion;
     private String celular;
     private String fijo1;
@@ -38,9 +38,9 @@ public class datosPaciente {
         this.nombre2 = "";
         this.apellido1 = "";
         this.apellido2 = "";
-        this.fnDia = 0;
-        this.fnMes = 0;
-        this.fnAnio = 0;
+        this.fnDia = "";
+        this.fnMes = "";
+        this.fnAnio = "";
         this.tpDoc = "";
         this.numDoc = "";
         this.ocupacion = "";
@@ -48,7 +48,7 @@ public class datosPaciente {
         this.stsCivil = "";
         this.departamento = "";
         this.municipio = "";
-        this.estrato = 0;
+        this.estrato = "";
         this.direccion ="";
         this.celular = "";
         this.fijo1 = "";
@@ -62,39 +62,6 @@ public class datosPaciente {
         this.correo2 = "";
         this.psswrd = "";
     }
-
-/*
-    public datosPaciente(String nombre1, String nombre2, String apellido1, String apellido2, int fnDia, int fnMes, int fnAnio, String tpDoc, String numDoc, String ocupacion, String genero, String stsCivil, String departamento, String municipio, int estrato, String direccion, String celular, String fijo1, String fijo2, String eps, String arl, String regimen, String grupoEt, String discapacidad, String correo1, String correo2, String password) {
-        this.nombre1 = nombre1;
-        this.nombre2 = nombre2;
-        this.apellido1 = apellido1;
-        this.apellido2 = apellido2;
-        this.fnDia = fnDia;
-        this.fnMes = fnMes;
-        this.fnAnio = fnAnio;
-        this.tpDoc = tpDoc;
-        this.numDoc = numDoc;
-        this.genero = genero;
-        this.stsCivil = stsCivil;
-        this.departamento = departamento;
-        this.municipio = municipio;
-        this.estrato = estrato;
-        this.direccion = direccion;
-        this.celular = celular;
-        this.fijo1 = fijo1;
-        this.fijo2 = fijo2;
-        this.eps = eps;
-        this.arl = arl;
-        this.regimen = regimen;
-        this.grupoEt = grupoEt;
-        this.discapacidad = discapacidad;
-        this.correo1 = correo1;
-        this.correo2 = correo2;
-        this.psswrd = password;
-        this.ocupacion=ocupacion;
-    }
-*/
-
     //GET
     public String getNombre1() {
         return nombre1;
@@ -108,13 +75,13 @@ public class datosPaciente {
     public String getApellido2() {
         return apellido2;
     }
-    public int getFnDia() {
+    public String getFnDia() {
         return fnDia;
     }
-    public int getFnMes() {
+    public String getFnMes() {
         return fnMes;
     }
-    public int getFnAnio() {
+    public String getFnAnio() {
         return fnAnio;
     }
     public String getDireccion() {
@@ -126,6 +93,7 @@ public class datosPaciente {
     public String getNumDoc() {
         return numDoc;
     }
+    /*
     public String getTpDoc() {
         return tpDoc;
     }
@@ -141,7 +109,7 @@ public class datosPaciente {
     public String getMunicipio() {
         return municipio;
     }
-    public int getEstrato() {
+    public String getEstrato() {
         return estrato;
     }
     public String getCelular() {
@@ -177,7 +145,7 @@ public class datosPaciente {
     public String getOcupacion() {
         return ocupacion;
     }
-
+    */
 
     //SET
     public void setNombre1(String nombre1) {
@@ -192,13 +160,13 @@ public class datosPaciente {
     public void setApellido2(String apellido2) {
         this.apellido2 = apellido2;
     }
-    public void setFnDia(int fnDia) {
+    public void setFnDia(String fnDia) {
         this.fnDia = fnDia;
     }
-    public void setFnMes(int fnMes) {
+    public void setFnMes(String fnMes) {
         this.fnMes = fnMes;
     }
-    public void setFnAnio(int fnAnio) {
+    public void setFnAnio(String fnAnio) {
         this.fnAnio = fnAnio;
     }
     public void setTpDoc(String tpDoc) {
@@ -219,7 +187,7 @@ public class datosPaciente {
     public void setMunicipio(String municipio) {
         this.municipio = municipio;
     }
-    public void setEstrato(int estrato) {
+    public void setEstrato(String estrato) {
         this.estrato = estrato;
     }
     public void setDireccion(String direccion) {

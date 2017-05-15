@@ -80,7 +80,7 @@ public class registroPaciente extends AppCompatActivity implements DialogCalenda
         Calendar calendar = Calendar.getInstance();
         anio = calendar.get(Calendar.YEAR);
         //Se inicializa Paciente
-        pacnt.setFnAnio(anio + 1);
+        pacnt.setFnAnio(String.valueOf(anio+1));
 
         //SE INSTANCIAN LOS OBJETOS DE LA INTERFAZ
         v2= (LinearLayout) findViewById(R.id.vistaFecha);
@@ -659,7 +659,7 @@ public class registroPaciente extends AppCompatActivity implements DialogCalenda
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String[] lista=getResources().getStringArray(R.array.estrato);
                 if(position!=0){
-                    pacnt.setEstrato(Integer.valueOf(lista[position]));
+                    pacnt.setEstrato(lista[position]);
                     v6.setVisibility(View.VISIBLE);
                 }
             }
@@ -816,9 +816,9 @@ public class registroPaciente extends AppCompatActivity implements DialogCalenda
         // Create an instance of the dialog fragment and show it
         DialogFragment dialog = new DialogCalendar();
         Bundle bundle = new Bundle();
-        bundle.putInt("year", pacnt.getFnAnio());
-        bundle.putInt("month", pacnt.getFnMes());
-        bundle.putInt("day", pacnt.getFnDia());
+        bundle.putInt("year", Integer.parseInt(pacnt.getFnAnio()));
+        bundle.putInt("month", Integer.parseInt(pacnt.getFnMes()));
+        bundle.putInt("day", Integer.parseInt(pacnt.getFnDia()));
         dialog.setArguments(bundle);
         dialog.show(getSupportFragmentManager(), "Fecha de Nacimiento");
     }
@@ -863,9 +863,9 @@ public class registroPaciente extends AppCompatActivity implements DialogCalenda
             data = data + String.valueOf(y) + " ";
         }
         txt.setText(data);
-        pacnt.setFnDia(d);
-        pacnt.setFnMes(m);
-        pacnt.setFnAnio(y);
+        pacnt.setFnDia(String.valueOf(d));
+        pacnt.setFnMes(String.valueOf(m));
+        pacnt.setFnAnio(String.valueOf(y));
         v3.setVisibility(View.VISIBLE);
         dialog.dismiss();
     }
