@@ -93,7 +93,7 @@ public class datosPaciente {
     public String getNumDoc() {
         return numDoc;
     }
-    /*
+
     public String getTpDoc() {
         return tpDoc;
     }
@@ -145,7 +145,7 @@ public class datosPaciente {
     public String getOcupacion() {
         return ocupacion;
     }
-    */
+
 
     //SET
     public void setNombre1(String nombre1) {
